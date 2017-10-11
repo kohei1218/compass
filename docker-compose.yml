@@ -1,0 +1,68 @@
+version: '2'
+services:
+  datastore:
+    image: busybox
+    volumes:
+      - postgres-data:/var/lib/postgres
+      - bundle_install:/app/vendor/bundle
+      - bundle:/app/.bundle
+      - node_modules:/app/node_modules
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    command: rails s -p 80 -b 0.0.0.0
+    working_dir: /app
+    container_name: compass_app
+    hostname: app
+    ports:
+     - "80:80"
+    expose:
+      - 3000
+    volumes:
+      - ".:/app"
+    volumes_from:
+      - datastore
+    links:
+      - postgres
+    tty: true
+    stdin_open: true
+
+  postgres:
+    image: postgres
+    container_name: compass_postgres
+    hostname: postgres
+    expose:
+      - 5432
+    ports:
+      - "5432:5432"
+    environment:
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: postgres
+      DATABASE_PORT: 5432
+      DATABASE_HOST: postgres
+    volumes_from:
+      - datastore
+
+  pgweb:
+    container_name: compass_pgweb
+    image: sosedoff/pgweb
+    ports:
+      - "8081:8081"
+    links:
+      - postgres
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@postgres:5432/compass_development?sslmode=disable
+    depends_on:
+      - postgres
+
+volumes:
+  postgres-data:
+    driver: local
+  bundle_install:
+    driver: local
+  bundle:
+    driver: local
+  node_modules:
+    driver: local
