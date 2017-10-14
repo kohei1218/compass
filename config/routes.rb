@@ -1,3 +1,18 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # Auth Routes
+  devise_for :admins
+  devise_for :users
+
+  # User Routes
+  root controller: :home, action: :index
+  resources :recruits, only: [:index, :show]
+  resource :profile, only: [:show, :edit, :update]
+
+  # Admin Routes
+  namespace :admin do
+    resources :recruits
+    resources :companies
+    resources :users, only: [:index, :show]
+    resource :profile, only: [:show, :edit, :update]
+  end
 end
