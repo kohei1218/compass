@@ -1,0 +1,2 @@
+class RecruitImage < ApplicationRecord
+end

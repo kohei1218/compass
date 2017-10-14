@@ -1,0 +1,17 @@
+<%= form_with(model: admin_recruit, local: true) do |form| %>
+  <% if admin_recruit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(admin_recruit.errors.count, "error") %> prohibited this admin_recruit from being saved:</h2>
+
+      <ul>
+      <% admin_recruit.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
