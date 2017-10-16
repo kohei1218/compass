@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   # Admin Routes
   namespace :admin do
+    resources :dashboard, only: [:index]
     resources :recruits
     resources :companies
     resources :users, only: [:index, :show]
