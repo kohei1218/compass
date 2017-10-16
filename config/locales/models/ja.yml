@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    models:
+      recruit: 求人
+    attributes:
+      recruit:
+        id: ID
+        created_at: 登録日時
+        updated_at: 更新日時
+        occupation: 募集職種
