@@ -1,0 +1,9 @@
+<% alert_types = {:alert => "warning", :error => "danger", :notice => "info", :success => "success"} %>
+<% flash.each do |type, message| %>
+    <div class="box-body">
+      <div class="alert alert-dismissable alert-<%= alert_types[type.to_sym] %>">
+        <button class="close" data-dismiss="alert" aria-hidden="true">☓</button>
+        <%= message %>
+      </div>
+    </div>
+<% end %>

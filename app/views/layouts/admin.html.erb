@@ -1,0 +1,18 @@
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<% end %>
+
+<% content_for :content do %>
+    <div class="wrapper">
+      <%= render 'admin/layouts/header' %>
+      <%= render 'admin/layouts/sidebar' %>
+      <div class="content-wrapper">
+        <%= render 'admin/layouts/partials/message' %>
+        <%= yield %>
+      </div>
+      <%= render 'admin/layouts/footer' %>
+    </div>
+<% end %>
+
+<%= render template: 'layouts/application', locals: { body_classes: 'hold-transition skin-blue sidebar-mini' } %>
