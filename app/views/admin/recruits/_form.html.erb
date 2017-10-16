@@ -1,17 +1,69 @@
-<%= form_with(model: admin_recruit, local: true) do |form| %>
-  <% if admin_recruit.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(admin_recruit.errors.count, "error") %> prohibited this admin_recruit from being saved:</h2>
-
-      <ul>
-      <% admin_recruit.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<%= form_with(model: [:admin, recruit], local: true) do |f| %>
+  <% if recruit.errors.any? %>
+    <div class="box-body">
+      <div class="alert alert-dismissable alert-danger">
+        <button class="close" data-dismiss="alert" aria-hidden="true">☓</button>
+        <ul>
+          <% recruit.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="box-body">
+    <div class="form-group">
+      <%= f.label "募集職種" %>
+      <%= f.text_area :occupation, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label "仕事内容" %>
+      <%= f.text_area :description, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label "対象となる方" %>
+      <%= f.text_area :qualification, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label "雇用形態" %>
+      <%= f.text_area :employment_type, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label "給与・待遇" %>
+      <%= f.text_area :salary, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label "福利厚生" %>
+      <%= f.text_area :welfare, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label "勤務時間" %>
+      <%= f.text_area :office_hours, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label "休日・休暇" %>
+      <%= f.text_area :holiday, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label "勤務地" %>
+      <%= f.text_area :location, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label "障がいへの配慮" %>
+      <%= f.text_area :consideration, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label "その他" %>
+      <%= f.text_area :information, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label "選考プロセス" %>
+      <%= f.text_area :screening_process, class: 'form-control' %>
+    </div>
   </div>
+
+    <div class="box-footer">
+      <%= f.submit class: "btn btn-primary btn-flat" %>
+    </div>
 <% end %>

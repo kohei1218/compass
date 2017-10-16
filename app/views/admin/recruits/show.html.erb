@@ -1,4 +1,73 @@
-<p id="notice"><%= notice %></p>
+<div class="box-body">
+  <div class="box box-primary">
+    <div class="box-header with-border">
+      <h3 class="box-title">求人詳細</h3>
+    </div>
+    <div class="box-body">
+      <strong><i class="fa fa-book margin-r-5"></i> 募集職種</strong>
+      <p class="text-muted">
+        <%= @recruit.occupation %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 仕事内容</strong>
+      <p class="text-muted">
+        <%= @recruit.description %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 対象となる方</strong>
+      <p class="text-muted">
+        <%= @recruit.qualification %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 雇用形態</strong>
+      <p class="text-muted">
+        <%= @recruit.employment_type %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 給与・待遇</strong>
+      <p class="text-muted">
+        <%= @recruit.salary %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 福利厚生</strong>
+      <p class="text-muted">
+        <%= @recruit.welfare %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 勤務時間</strong>
+      <p class="text-muted">
+        <%= @recruit.salary %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 休日・休暇</strong>
+      <p class="text-muted">
+        <%= @recruit.holiday %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 勤務地</strong>
+      <p class="text-muted">
+        <%= @recruit.location %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 障がいへの配慮</strong>
+      <p class="text-muted">
+        <%= @recruit.consideration %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> その他</strong>
+      <p class="text-muted">
+        <%= @recruit.information %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 選考プロセス</strong>
+      <p class="text-muted">
+        <%= @recruit.screening_process %>
+      </p>
+    </div>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_admin_recruit_path(@admin_recruit) %> |
-<%= link_to 'Back', admin_recruits_path %>
+<div class="box-footer">
+  <%= link_to '編集', edit_admin_recruit_path(@recruit), class: 'btn btn-success btn-flat' %>
+  <%= link_to '削除', admin_recruit_path(@recruit), method: :delete, class: 'btn btn-danger btn-flat' %>
+</div>
