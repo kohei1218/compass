@@ -19,6 +19,8 @@ gem 'bower-rails'
 gem 'ransack'
 gem 'font-awesome-rails'
 gem 'carrierwave'
+gem 'kaminari'
+gem 'faker'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -26,6 +28,8 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :development do
