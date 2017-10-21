@@ -5,12 +5,13 @@ RUN npm install -g npm && npm install -g bower
 RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 ENV APP_ROOT /app
+ENV BUNDLE_PATH /bundle
 RUN mkdir $APP_ROOT
 WORKDIR $APP_ROOT
 
 COPY Gemfile $APP_ROOT
 COPY Gemfile.lock $APP_ROOT
 
-ADD . $APP_ROOT
+RUN bundle install
 
-RUN bundle install --path /app/vendor/bundle
+ADD . $APP_ROOT
