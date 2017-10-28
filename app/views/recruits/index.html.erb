@@ -12,9 +12,9 @@
   <tbody>
     <% @recruits.each do |recruit| %>
       <tr>
-        <td><%= link_to 'Show', recruit %></td>
-        <td><%= link_to 'Edit', edit_recruit_path(recruit) %></td>
-        <td><%= link_to 'Destroy', recruit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>
+          <h1>recruit.</h1>
+        </th>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +22,3 @@
 
 <br>
 
-<%= link_to 'New Recruit', new_recruit_path %>

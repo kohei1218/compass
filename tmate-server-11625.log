@@ -1,0 +1,1103 @@
+1508569764.727991 server started (11625): socket /private/tmp/tmate-501/N1RfCG, protocol 8
+1508569764.728019 on Darwin 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64; libevent 2.1.8-stable (kqueue)
+1508569764.728173 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728194 cmdq 0x7fe3b8604cd0: bind-key C-b send-prefix
+1508569764.728206 preparing state for bind-key C-b send-prefix (client 0x0)
+1508569764.728215 cmd_find_client: no target, return 0x0
+1508569764.728218 preparing -t state: target none
+1508569764.728222 preparing -s state: target none
+1508569764.728247 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728255 cmdq 0x7fe3b8604cd0: bind-key C-o rotate-window
+1508569764.728261 preparing state for bind-key C-o rotate-window (client 0x0)
+1508569764.728265 cmd_find_client: no target, return 0x0
+1508569764.728268 preparing -t state: target none
+1508569764.728272 preparing -s state: target none
+1508569764.728283 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728290 cmdq 0x7fe3b8604cd0: bind-key C-z suspend-client
+1508569764.728296 preparing state for bind-key C-z suspend-client (client 0x0)
+1508569764.728299 cmd_find_client: no target, return 0x0
+1508569764.728303 preparing -t state: target none
+1508569764.728306 preparing -s state: target none
+1508569764.728317 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728324 cmdq 0x7fe3b8604cd0: bind-key Space next-layout
+1508569764.728330 preparing state for bind-key Space next-layout (client 0x0)
+1508569764.728334 cmd_find_client: no target, return 0x0
+1508569764.728337 preparing -t state: target none
+1508569764.728341 preparing -s state: target none
+1508569764.728353 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728360 cmdq 0x7fe3b8604cd0: bind-key ! break-pane
+1508569764.728366 preparing state for bind-key ! break-pane (client 0x0)
+1508569764.728370 cmd_find_client: no target, return 0x0
+1508569764.728373 preparing -t state: target none
+1508569764.728376 preparing -s state: target none
+1508569764.728389 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728395 cmdq 0x7fe3b8604cd0: bind-key " split-window
+1508569764.728401 preparing state for bind-key " split-window (client 0x0)
+1508569764.728404 cmd_find_client: no target, return 0x0
+1508569764.728408 preparing -t state: target none
+1508569764.728411 preparing -s state: target none
+1508569764.728422 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728428 cmdq 0x7fe3b8604cd0: bind-key # list-buffers
+1508569764.728434 preparing state for bind-key # list-buffers (client 0x0)
+1508569764.728437 cmd_find_client: no target, return 0x0
+1508569764.728441 preparing -t state: target none
+1508569764.728444 preparing -s state: target none
+1508569764.728457 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728467 cmdq 0x7fe3b8604cd0: bind-key $ command-prompt -I#S "rename-session '%%'"
+1508569764.728475 preparing state for bind-key $ command-prompt -I#S "rename-session '%%'" (client 0x0)
+1508569764.728479 cmd_find_client: no target, return 0x0
+1508569764.728482 preparing -t state: target none
+1508569764.728485 preparing -s state: target none
+1508569764.728500 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728507 cmdq 0x7fe3b8604cd0: bind-key % split-window -h
+1508569764.728514 preparing state for bind-key % split-window -h (client 0x0)
+1508569764.728517 cmd_find_client: no target, return 0x0
+1508569764.728521 preparing -t state: target none
+1508569764.728524 preparing -s state: target none
+1508569764.728539 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728549 cmdq 0x7fe3b8604cd0: bind-key & confirm-before "-pkill-window #W? (y/n)" kill-window
+1508569764.728557 preparing state for bind-key & confirm-before "-pkill-window #W? (y/n)" kill-window (client 0x0)
+1508569764.728560 cmd_find_client: no target, return 0x0
+1508569764.728564 preparing -t state: target none
+1508569764.728567 preparing -s state: target none
+1508569764.728581 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728600 cmdq 0x7fe3b8604cd0: bind-key ' command-prompt -pindex "select-window -t ':%%'"
+1508569764.728608 preparing state for bind-key ' command-prompt -pindex "select-window -t ':%%'" (client 0x0)
+1508569764.728611 cmd_find_client: no target, return 0x0
+1508569764.728615 preparing -t state: target none
+1508569764.728618 preparing -s state: target none
+1508569764.728629 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728637 cmdq 0x7fe3b8604cd0: bind-key ( switch-client -p
+1508569764.728643 preparing state for bind-key ( switch-client -p (client 0x0)
+1508569764.728647 cmd_find_client: no target, return 0x0
+1508569764.728650 preparing -t state: target none
+1508569764.728653 preparing -s state: target none
+1508569764.728668 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728676 cmdq 0x7fe3b8604cd0: bind-key ) switch-client -n
+1508569764.728682 preparing state for bind-key ) switch-client -n (client 0x0)
+1508569764.728686 cmd_find_client: no target, return 0x0
+1508569764.728689 preparing -t state: target none
+1508569764.728693 preparing -s state: target none
+1508569764.728707 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728716 cmdq 0x7fe3b8604cd0: bind-key , command-prompt -I#W "rename-window '%%'"
+1508569764.728723 preparing state for bind-key , command-prompt -I#W "rename-window '%%'" (client 0x0)
+1508569764.728727 cmd_find_client: no target, return 0x0
+1508569764.728730 preparing -t state: target none
+1508569764.728733 preparing -s state: target none
+1508569764.728744 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728750 cmdq 0x7fe3b8604cd0: bind-key - delete-buffer
+1508569764.728756 preparing state for bind-key - delete-buffer (client 0x0)
+1508569764.728760 cmd_find_client: no target, return 0x0
+1508569764.728763 preparing -t state: target none
+1508569764.728766 preparing -s state: target none
+1508569764.728777 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728785 cmdq 0x7fe3b8604cd0: bind-key . command-prompt "move-window -t '%%'"
+1508569764.728792 preparing state for bind-key . command-prompt "move-window -t '%%'" (client 0x0)
+1508569764.728796 cmd_find_client: no target, return 0x0
+1508569764.728799 preparing -t state: target none
+1508569764.728802 preparing -s state: target none
+1508569764.728813 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728821 cmdq 0x7fe3b8604cd0: bind-key 0 select-window -t:=0
+1508569764.728827 preparing state for bind-key 0 select-window -t:=0 (client 0x0)
+1508569764.728830 cmd_find_client: no target, return 0x0
+1508569764.728834 preparing -t state: target none
+1508569764.728837 preparing -s state: target none
+1508569764.728848 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728856 cmdq 0x7fe3b8604cd0: bind-key 1 select-window -t:=1
+1508569764.728862 preparing state for bind-key 1 select-window -t:=1 (client 0x0)
+1508569764.728866 cmd_find_client: no target, return 0x0
+1508569764.728869 preparing -t state: target none
+1508569764.728872 preparing -s state: target none
+1508569764.728884 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728891 cmdq 0x7fe3b8604cd0: bind-key 2 select-window -t:=2
+1508569764.728897 preparing state for bind-key 2 select-window -t:=2 (client 0x0)
+1508569764.728901 cmd_find_client: no target, return 0x0
+1508569764.728904 preparing -t state: target none
+1508569764.728908 preparing -s state: target none
+1508569764.728919 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728927 cmdq 0x7fe3b8604cd0: bind-key 3 select-window -t:=3
+1508569764.728933 preparing state for bind-key 3 select-window -t:=3 (client 0x0)
+1508569764.728936 cmd_find_client: no target, return 0x0
+1508569764.728940 preparing -t state: target none
+1508569764.728943 preparing -s state: target none
+1508569764.728954 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.728984 cmdq 0x7fe3b8604cd0: bind-key 4 select-window -t:=4
+1508569764.728990 preparing state for bind-key 4 select-window -t:=4 (client 0x0)
+1508569764.728995 cmd_find_client: no target, return 0x0
+1508569764.729005 preparing -t state: target none
+1508569764.729008 preparing -s state: target none
+1508569764.729019 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729026 cmdq 0x7fe3b8604cd0: bind-key 5 select-window -t:=5
+1508569764.729031 preparing state for bind-key 5 select-window -t:=5 (client 0x0)
+1508569764.729035 cmd_find_client: no target, return 0x0
+1508569764.729038 preparing -t state: target none
+1508569764.729041 preparing -s state: target none
+1508569764.729051 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729057 cmdq 0x7fe3b8604cd0: bind-key 6 select-window -t:=6
+1508569764.729063 preparing state for bind-key 6 select-window -t:=6 (client 0x0)
+1508569764.729066 cmd_find_client: no target, return 0x0
+1508569764.729069 preparing -t state: target none
+1508569764.729072 preparing -s state: target none
+1508569764.729082 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729092 cmdq 0x7fe3b8604cd0: bind-key 7 select-window -t:=7
+1508569764.729098 preparing state for bind-key 7 select-window -t:=7 (client 0x0)
+1508569764.729101 cmd_find_client: no target, return 0x0
+1508569764.729104 preparing -t state: target none
+1508569764.729107 preparing -s state: target none
+1508569764.729117 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729124 cmdq 0x7fe3b8604cd0: bind-key 8 select-window -t:=8
+1508569764.729129 preparing state for bind-key 8 select-window -t:=8 (client 0x0)
+1508569764.729133 cmd_find_client: no target, return 0x0
+1508569764.729136 preparing -t state: target none
+1508569764.729139 preparing -s state: target none
+1508569764.729149 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729155 cmdq 0x7fe3b8604cd0: bind-key 9 select-window -t:=9
+1508569764.729161 preparing state for bind-key 9 select-window -t:=9 (client 0x0)
+1508569764.729164 cmd_find_client: no target, return 0x0
+1508569764.729167 preparing -t state: target none
+1508569764.729170 preparing -s state: target none
+1508569764.729180 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729186 cmdq 0x7fe3b8604cd0: bind-key : command-prompt
+1508569764.729191 preparing state for bind-key : command-prompt (client 0x0)
+1508569764.729194 cmd_find_client: no target, return 0x0
+1508569764.729197 preparing -t state: target none
+1508569764.729200 preparing -s state: target none
+1508569764.729209 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729214 cmdq 0x7fe3b8604cd0: bind-key ; last-pane
+1508569764.729219 preparing state for bind-key ; last-pane (client 0x0)
+1508569764.729223 cmd_find_client: no target, return 0x0
+1508569764.729226 preparing -t state: target none
+1508569764.729228 preparing -s state: target none
+1508569764.729237 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729245 cmdq 0x7fe3b8604cd0: bind-key = choose-buffer
+1508569764.729251 preparing state for bind-key = choose-buffer (client 0x0)
+1508569764.729254 cmd_find_client: no target, return 0x0
+1508569764.729257 preparing -t state: target none
+1508569764.729260 preparing -s state: target none
+1508569764.729268 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729274 cmdq 0x7fe3b8604cd0: bind-key ? list-keys
+1508569764.729279 preparing state for bind-key ? list-keys (client 0x0)
+1508569764.729282 cmd_find_client: no target, return 0x0
+1508569764.729285 preparing -t state: target none
+1508569764.729288 preparing -s state: target none
+1508569764.729297 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729302 cmdq 0x7fe3b8604cd0: bind-key D choose-client
+1508569764.729307 preparing state for bind-key D choose-client (client 0x0)
+1508569764.729311 cmd_find_client: no target, return 0x0
+1508569764.729314 preparing -t state: target none
+1508569764.729317 preparing -s state: target none
+1508569764.729326 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729332 cmdq 0x7fe3b8604cd0: bind-key L switch-client -l
+1508569764.729338 preparing state for bind-key L switch-client -l (client 0x0)
+1508569764.729341 cmd_find_client: no target, return 0x0
+1508569764.729350 preparing -t state: target none
+1508569764.729353 preparing -s state: target none
+1508569764.729364 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729371 cmdq 0x7fe3b8604cd0: bind-key M select-pane -M
+1508569764.729377 preparing state for bind-key M select-pane -M (client 0x0)
+1508569764.729380 cmd_find_client: no target, return 0x0
+1508569764.729383 preparing -t state: target none
+1508569764.729386 preparing -s state: target none
+1508569764.729395 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729401 cmdq 0x7fe3b8604cd0: bind-key [ copy-mode
+1508569764.729406 preparing state for bind-key [ copy-mode (client 0x0)
+1508569764.729409 cmd_find_client: no target, return 0x0
+1508569764.729412 preparing -t state: target none
+1508569764.729415 preparing -s state: target none
+1508569764.729424 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729429 cmdq 0x7fe3b8604cd0: bind-key ] paste-buffer
+1508569764.729434 preparing state for bind-key ] paste-buffer (client 0x0)
+1508569764.729437 cmd_find_client: no target, return 0x0
+1508569764.729440 preparing -t state: target none
+1508569764.729443 preparing -s state: target none
+1508569764.729452 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729458 cmdq 0x7fe3b8604cd0: bind-key c new-window
+1508569764.729463 preparing state for bind-key c new-window (client 0x0)
+1508569764.729466 cmd_find_client: no target, return 0x0
+1508569764.729469 preparing -t state: target none
+1508569764.729472 preparing -s state: target none
+1508569764.729480 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729486 cmdq 0x7fe3b8604cd0: bind-key d detach-client
+1508569764.729491 preparing state for bind-key d detach-client (client 0x0)
+1508569764.729494 cmd_find_client: no target, return 0x0
+1508569764.729497 preparing -t state: target none
+1508569764.729500 preparing -s state: target none
+1508569764.729510 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729520 cmdq 0x7fe3b8604cd0: bind-key f command-prompt "find-window '%%'"
+1508569764.729527 preparing state for bind-key f command-prompt "find-window '%%'" (client 0x0)
+1508569764.729530 cmd_find_client: no target, return 0x0
+1508569764.729533 preparing -t state: target none
+1508569764.729536 preparing -s state: target none
+1508569764.729545 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729552 cmdq 0x7fe3b8604cd0: bind-key i display-message
+1508569764.729557 preparing state for bind-key i display-message (client 0x0)
+1508569764.729560 cmd_find_client: no target, return 0x0
+1508569764.729563 preparing -t state: target none
+1508569764.729566 preparing -s state: target none
+1508569764.729574 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729580 cmdq 0x7fe3b8604cd0: bind-key l last-window
+1508569764.729585 preparing state for bind-key l last-window (client 0x0)
+1508569764.729588 cmd_find_client: no target, return 0x0
+1508569764.729591 preparing -t state: target none
+1508569764.729594 preparing -s state: target none
+1508569764.729603 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729610 cmdq 0x7fe3b8604cd0: bind-key m select-pane -m
+1508569764.729615 preparing state for bind-key m select-pane -m (client 0x0)
+1508569764.729619 cmd_find_client: no target, return 0x0
+1508569764.729622 preparing -t state: target none
+1508569764.729625 preparing -s state: target none
+1508569764.729634 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729640 cmdq 0x7fe3b8604cd0: bind-key n next-window
+1508569764.729645 preparing state for bind-key n next-window (client 0x0)
+1508569764.729648 cmd_find_client: no target, return 0x0
+1508569764.729651 preparing -t state: target none
+1508569764.729654 preparing -s state: target none
+1508569764.729663 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729670 cmdq 0x7fe3b8604cd0: bind-key o select-pane -t:.+
+1508569764.729676 preparing state for bind-key o select-pane -t:.+ (client 0x0)
+1508569764.729679 cmd_find_client: no target, return 0x0
+1508569764.729688 preparing -t state: target none
+1508569764.729691 preparing -s state: target none
+1508569764.729701 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729707 cmdq 0x7fe3b8604cd0: bind-key p previous-window
+1508569764.729712 preparing state for bind-key p previous-window (client 0x0)
+1508569764.729716 cmd_find_client: no target, return 0x0
+1508569764.729719 preparing -t state: target none
+1508569764.729722 preparing -s state: target none
+1508569764.729730 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729736 cmdq 0x7fe3b8604cd0: bind-key q display-panes
+1508569764.729741 preparing state for bind-key q display-panes (client 0x0)
+1508569764.729744 cmd_find_client: no target, return 0x0
+1508569764.729747 preparing -t state: target none
+1508569764.729750 preparing -s state: target none
+1508569764.729759 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729765 cmdq 0x7fe3b8604cd0: bind-key r refresh-client
+1508569764.729770 preparing state for bind-key r refresh-client (client 0x0)
+1508569764.729773 cmd_find_client: no target, return 0x0
+1508569764.729776 preparing -t state: target none
+1508569764.729779 preparing -s state: target none
+1508569764.729788 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729793 cmdq 0x7fe3b8604cd0: bind-key s choose-tree
+1508569764.729798 preparing state for bind-key s choose-tree (client 0x0)
+1508569764.729802 cmd_find_client: no target, return 0x0
+1508569764.729805 preparing -t state: target none
+1508569764.729808 preparing -s state: target none
+1508569764.729816 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729821 cmdq 0x7fe3b8604cd0: bind-key t clock-mode
+1508569764.729826 preparing state for bind-key t clock-mode (client 0x0)
+1508569764.729830 cmd_find_client: no target, return 0x0
+1508569764.729833 preparing -t state: target none
+1508569764.729835 preparing -s state: target none
+1508569764.729844 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729850 cmdq 0x7fe3b8604cd0: bind-key w choose-window
+1508569764.729855 preparing state for bind-key w choose-window (client 0x0)
+1508569764.729858 cmd_find_client: no target, return 0x0
+1508569764.729861 preparing -t state: target none
+1508569764.729864 preparing -s state: target none
+1508569764.729875 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729884 cmdq 0x7fe3b8604cd0: bind-key x confirm-before "-pkill-pane #P? (y/n)" kill-pane
+1508569764.729891 preparing state for bind-key x confirm-before "-pkill-pane #P? (y/n)" kill-pane (client 0x0)
+1508569764.729894 cmd_find_client: no target, return 0x0
+1508569764.729897 preparing -t state: target none
+1508569764.729900 preparing -s state: target none
+1508569764.729910 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729917 cmdq 0x7fe3b8604cd0: bind-key z resize-pane -Z
+1508569764.729923 preparing state for bind-key z resize-pane -Z (client 0x0)
+1508569764.729926 cmd_find_client: no target, return 0x0
+1508569764.729929 preparing -t state: target none
+1508569764.729932 preparing -s state: target none
+1508569764.729942 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729949 cmdq 0x7fe3b8604cd0: bind-key { swap-pane -U
+1508569764.729954 preparing state for bind-key { swap-pane -U (client 0x0)
+1508569764.729958 cmd_find_client: no target, return 0x0
+1508569764.729961 preparing -t state: target none
+1508569764.729964 preparing -s state: target none
+1508569764.729976 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.729983 cmdq 0x7fe3b8604cd0: bind-key } swap-pane -D
+1508569764.729989 preparing state for bind-key } swap-pane -D (client 0x0)
+1508569764.729992 cmd_find_client: no target, return 0x0
+1508569764.729995 preparing -t state: target none
+1508569764.729998 preparing -s state: target none
+1508569764.730008 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730014 cmdq 0x7fe3b8604cd0: bind-key ~ show-messages
+1508569764.730019 preparing state for bind-key ~ show-messages (client 0x0)
+1508569764.730023 cmd_find_client: no target, return 0x0
+1508569764.730032 preparing -t state: target none
+1508569764.730035 preparing -s state: target none
+1508569764.730045 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730053 cmdq 0x7fe3b8604cd0: bind-key PPage copy-mode -u
+1508569764.730059 preparing state for bind-key PPage copy-mode -u (client 0x0)
+1508569764.730062 cmd_find_client: no target, return 0x0
+1508569764.730065 preparing -t state: target none
+1508569764.730068 preparing -s state: target none
+1508569764.730079 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730087 cmdq 0x7fe3b8604cd0: bind-key -r Up select-pane -U
+1508569764.730094 preparing state for bind-key -r Up select-pane -U (client 0x0)
+1508569764.730097 cmd_find_client: no target, return 0x0
+1508569764.730100 preparing -t state: target none
+1508569764.730103 preparing -s state: target none
+1508569764.730115 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730123 cmdq 0x7fe3b8604cd0: bind-key -r Down select-pane -D
+1508569764.730130 preparing state for bind-key -r Down select-pane -D (client 0x0)
+1508569764.730133 cmd_find_client: no target, return 0x0
+1508569764.730136 preparing -t state: target none
+1508569764.730139 preparing -s state: target none
+1508569764.730151 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730159 cmdq 0x7fe3b8604cd0: bind-key -r Left select-pane -L
+1508569764.730165 preparing state for bind-key -r Left select-pane -L (client 0x0)
+1508569764.730169 cmd_find_client: no target, return 0x0
+1508569764.730172 preparing -t state: target none
+1508569764.730175 preparing -s state: target none
+1508569764.730186 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730194 cmdq 0x7fe3b8604cd0: bind-key -r Right select-pane -R
+1508569764.730201 preparing state for bind-key -r Right select-pane -R (client 0x0)
+1508569764.730205 cmd_find_client: no target, return 0x0
+1508569764.730208 preparing -t state: target none
+1508569764.730211 preparing -s state: target none
+1508569764.730222 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730230 cmdq 0x7fe3b8604cd0: bind-key M-1 select-layout even-horizontal
+1508569764.730236 preparing state for bind-key M-1 select-layout even-horizontal (client 0x0)
+1508569764.730239 cmd_find_client: no target, return 0x0
+1508569764.730242 preparing -t state: target none
+1508569764.730245 preparing -s state: target none
+1508569764.730256 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730266 cmdq 0x7fe3b8604cd0: bind-key M-2 select-layout even-vertical
+1508569764.730272 preparing state for bind-key M-2 select-layout even-vertical (client 0x0)
+1508569764.730276 cmd_find_client: no target, return 0x0
+1508569764.730279 preparing -t state: target none
+1508569764.730282 preparing -s state: target none
+1508569764.730293 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730300 cmdq 0x7fe3b8604cd0: bind-key M-3 select-layout main-horizontal
+1508569764.730306 preparing state for bind-key M-3 select-layout main-horizontal (client 0x0)
+1508569764.730310 cmd_find_client: no target, return 0x0
+1508569764.730313 preparing -t state: target none
+1508569764.730316 preparing -s state: target none
+1508569764.730327 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730334 cmdq 0x7fe3b8604cd0: bind-key M-4 select-layout main-vertical
+1508569764.730340 preparing state for bind-key M-4 select-layout main-vertical (client 0x0)
+1508569764.730343 cmd_find_client: no target, return 0x0
+1508569764.730346 preparing -t state: target none
+1508569764.730349 preparing -s state: target none
+1508569764.730360 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730367 cmdq 0x7fe3b8604cd0: bind-key M-5 select-layout tiled
+1508569764.730373 preparing state for bind-key M-5 select-layout tiled (client 0x0)
+1508569764.730376 cmd_find_client: no target, return 0x0
+1508569764.730379 preparing -t state: target none
+1508569764.730382 preparing -s state: target none
+1508569764.730394 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730402 cmdq 0x7fe3b8604cd0: bind-key M-n next-window -a
+1508569764.730413 preparing state for bind-key M-n next-window -a (client 0x0)
+1508569764.730417 cmd_find_client: no target, return 0x0
+1508569764.730420 preparing -t state: target none
+1508569764.730423 preparing -s state: target none
+1508569764.730434 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730441 cmdq 0x7fe3b8604cd0: bind-key M-o rotate-window -D
+1508569764.730447 preparing state for bind-key M-o rotate-window -D (client 0x0)
+1508569764.730450 cmd_find_client: no target, return 0x0
+1508569764.730453 preparing -t state: target none
+1508569764.730456 preparing -s state: target none
+1508569764.730466 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730473 cmdq 0x7fe3b8604cd0: bind-key M-p previous-window -a
+1508569764.730479 preparing state for bind-key M-p previous-window -a (client 0x0)
+1508569764.730482 cmd_find_client: no target, return 0x0
+1508569764.730485 preparing -t state: target none
+1508569764.730488 preparing -s state: target none
+1508569764.730500 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730509 cmdq 0x7fe3b8604cd0: bind-key -r M-Up resize-pane -U 5
+1508569764.730516 preparing state for bind-key -r M-Up resize-pane -U 5 (client 0x0)
+1508569764.730520 cmd_find_client: no target, return 0x0
+1508569764.730523 preparing -t state: target none
+1508569764.730526 preparing -s state: target none
+1508569764.730539 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730548 cmdq 0x7fe3b8604cd0: bind-key -r M-Down resize-pane -D 5
+1508569764.730556 preparing state for bind-key -r M-Down resize-pane -D 5 (client 0x0)
+1508569764.730559 cmd_find_client: no target, return 0x0
+1508569764.730562 preparing -t state: target none
+1508569764.730565 preparing -s state: target none
+1508569764.730578 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730587 cmdq 0x7fe3b8604cd0: bind-key -r M-Left resize-pane -L 5
+1508569764.730594 preparing state for bind-key -r M-Left resize-pane -L 5 (client 0x0)
+1508569764.730597 cmd_find_client: no target, return 0x0
+1508569764.730600 preparing -t state: target none
+1508569764.730603 preparing -s state: target none
+1508569764.730616 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730625 cmdq 0x7fe3b8604cd0: bind-key -r M-Right resize-pane -R 5
+1508569764.730632 preparing state for bind-key -r M-Right resize-pane -R 5 (client 0x0)
+1508569764.730635 cmd_find_client: no target, return 0x0
+1508569764.730638 preparing -t state: target none
+1508569764.730641 preparing -s state: target none
+1508569764.730653 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730661 cmdq 0x7fe3b8604cd0: bind-key -r C-Up resize-pane -U
+1508569764.730668 preparing state for bind-key -r C-Up resize-pane -U (client 0x0)
+1508569764.730671 cmd_find_client: no target, return 0x0
+1508569764.730674 preparing -t state: target none
+1508569764.730677 preparing -s state: target none
+1508569764.730688 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730696 cmdq 0x7fe3b8604cd0: bind-key -r C-Down resize-pane -D
+1508569764.730703 preparing state for bind-key -r C-Down resize-pane -D (client 0x0)
+1508569764.730706 cmd_find_client: no target, return 0x0
+1508569764.730709 preparing -t state: target none
+1508569764.730712 preparing -s state: target none
+1508569764.730724 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730732 cmdq 0x7fe3b8604cd0: bind-key -r C-Left resize-pane -L
+1508569764.730739 preparing state for bind-key -r C-Left resize-pane -L (client 0x0)
+1508569764.730742 cmd_find_client: no target, return 0x0
+1508569764.730745 preparing -t state: target none
+1508569764.730748 preparing -s state: target none
+1508569764.730759 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730767 cmdq 0x7fe3b8604cd0: bind-key -r C-Right resize-pane -R
+1508569764.730774 preparing state for bind-key -r C-Right resize-pane -R (client 0x0)
+1508569764.730777 cmd_find_client: no target, return 0x0
+1508569764.730780 preparing -t state: target none
+1508569764.730783 preparing -s state: target none
+1508569764.730805 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730816 cmdq 0x7fe3b8604cd0: bind-key -n MouseDown1Pane select-pane -t=; send-keys -M
+1508569764.730824 preparing state for bind-key -n MouseDown1Pane select-pane -t=; send-keys -M (client 0x0)
+1508569764.730827 cmd_find_client: no target, return 0x0
+1508569764.730830 preparing -t state: target none
+1508569764.730833 preparing -s state: target none
+1508569764.730848 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730857 cmdq 0x7fe3b8604cd0: bind-key -n MouseDrag1Border resize-pane -M
+1508569764.730864 preparing state for bind-key -n MouseDrag1Border resize-pane -M (client 0x0)
+1508569764.730867 cmd_find_client: no target, return 0x0
+1508569764.730870 preparing -t state: target none
+1508569764.730873 preparing -s state: target none
+1508569764.730886 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730895 cmdq 0x7fe3b8604cd0: bind-key -n MouseDown1Status select-window -t=
+1508569764.730901 preparing state for bind-key -n MouseDown1Status select-window -t= (client 0x0)
+1508569764.730905 cmd_find_client: no target, return 0x0
+1508569764.730908 preparing -t state: target none
+1508569764.730911 preparing -s state: target none
+1508569764.730923 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730930 cmdq 0x7fe3b8604cd0: bind-key -n WheelDownStatus next-window
+1508569764.730936 preparing state for bind-key -n WheelDownStatus next-window (client 0x0)
+1508569764.730939 cmd_find_client: no target, return 0x0
+1508569764.730943 preparing -t state: target none
+1508569764.730946 preparing -s state: target none
+1508569764.730957 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.730965 cmdq 0x7fe3b8604cd0: bind-key -n WheelUpStatus previous-window
+1508569764.730971 preparing state for bind-key -n WheelUpStatus previous-window (client 0x0)
+1508569764.730975 cmd_find_client: no target, return 0x0
+1508569764.730978 preparing -t state: target none
+1508569764.730981 preparing -s state: target none
+1508569764.730999 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.731013 cmdq 0x7fe3b8604cd0: bind-key -n MouseDrag1Pane if -Ft= #{mouse_any_flag} "if -Ft= "#{pane_in_mode}" "copy-mode -M" "send-keys -M"" "copy-mode -M"
+1508569764.731024 preparing state for bind-key -n MouseDrag1Pane if -Ft= #{mouse_any_flag} "if -Ft= "#{pane_in_mode}" "copy-mode -M" "send-keys -M"" "copy-mode -M" (client 0x0)
+1508569764.731028 cmd_find_client: no target, return 0x0
+1508569764.731031 preparing -t state: target none
+1508569764.731034 preparing -s state: target none
+1508569764.731054 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.731067 cmdq 0x7fe3b8604cd0: bind-key -n MouseDown3Pane if-shell -Ft= #{mouse_any_flag} "select-pane -t=; send-keys -M" "select-pane -mt="
+1508569764.731077 preparing state for bind-key -n MouseDown3Pane if-shell -Ft= #{mouse_any_flag} "select-pane -t=; send-keys -M" "select-pane -mt=" (client 0x0)
+1508569764.731080 cmd_find_client: no target, return 0x0
+1508569764.731083 preparing -t state: target none
+1508569764.731087 preparing -s state: target none
+1508569764.731107 continuing cmdq 0x7fe3b8604cd0: flags 0, client 0x0
+1508569764.731123 cmdq 0x7fe3b8604cd0: bind-key -n WheelUpPane if-shell -Ft= #{mouse_any_flag} "send-keys -M" "if -Ft= "#{pane_in_mode}" "send-keys -M" "copy-mode -et=""
+1508569764.731133 preparing state for bind-key -n WheelUpPane if-shell -Ft= #{mouse_any_flag} "send-keys -M" "if -Ft= "#{pane_in_mode}" "send-keys -M" "copy-mode -et="" (client 0x0)
+1508569764.731137 cmd_find_client: no target, return 0x0
+1508569764.731140 preparing -t state: target none
+1508569764.731143 preparing -s state: target none
+1508569764.731316 add peer 0x7fe3b9807a00: 7 (0x7fe3b9807400)
+1508569764.731332 new client 0x7fe3b9807400
+1508569764.731847 continuing cmdq 0x7fe3b860c500: flags 0, client 0x0
+1508569764.732333 [tmate] I Looking up ssh.tmate.io...
+1508569764.732525 unref client 0x7fe3b9807400 (2 references)
+1508569764.732536 server loop enter
+1508569764.732595 peer 0x7fe3b9807a00 message 100
+1508569764.732619 client 0x7fe3b9807400 IDENTIFY_FLAGS 0x30000
+1508569764.732623 peer 0x7fe3b9807a00 message 101
+1508569764.732627 client 0x7fe3b9807400 IDENTIFY_TERM xterm-256color
+1508569764.732631 peer 0x7fe3b9807a00 message 102
+1508569764.732634 client 0x7fe3b9807400 IDENTIFY_TTYNAME /dev/ttys001
+1508569764.732638 peer 0x7fe3b9807a00 message 108
+1508569764.732650 client 0x7fe3b9807400 IDENTIFY_CWD /Users/kohei/Desktop/kohei/compass
+1508569764.732654 peer 0x7fe3b9807a00 message 104
+1508569764.732657 client 0x7fe3b9807400 IDENTIFY_STDIN 8
+1508569764.732660 peer 0x7fe3b9807a00 message 107
+1508569764.732664 client 0x7fe3b9807400 IDENTIFY_CLIENTPID 11623
+1508569764.732667 peer 0x7fe3b9807a00 message 105
+1508569764.732674 client 0x7fe3b9807400 IDENTIFY_ENVIRON TERM_PROGRAM=iTerm.app
+1508569764.732678 peer 0x7fe3b9807a00 message 105
+1508569764.732682 client 0x7fe3b9807400 IDENTIFY_ENVIRON TERM=xterm-256color
+1508569764.732686 peer 0x7fe3b9807a00 message 105
+1508569764.732690 client 0x7fe3b9807400 IDENTIFY_ENVIRON SHELL=/bin/bash
+1508569764.732694 peer 0x7fe3b9807a00 message 105
+1508569764.732699 client 0x7fe3b9807400 IDENTIFY_ENVIRON TMPDIR=/var/folders/vj/ttm5kp2s2g53dnc593ktwvdh0000gn/T/
+1508569764.732702 peer 0x7fe3b9807a00 message 105
+1508569764.732707 client 0x7fe3b9807400 IDENTIFY_ENVIRON Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.3ACFTGRaZV/Render
+1508569764.732711 peer 0x7fe3b9807a00 message 105
+1508569764.732716 client 0x7fe3b9807400 IDENTIFY_ENVIRON TERM_PROGRAM_VERSION=3.1.3
+1508569764.732719 peer 0x7fe3b9807a00 message 105
+1508569764.732724 client 0x7fe3b9807400 IDENTIFY_ENVIRON TERM_SESSION_ID=w0t1p0:CB3599A2-D632-41D6-957E-8677C35E96EF
+1508569764.732727 peer 0x7fe3b9807a00 message 105
+1508569764.732732 client 0x7fe3b9807400 IDENTIFY_ENVIRON USER=kohei
+1508569764.732735 peer 0x7fe3b9807a00 message 105
+1508569764.732739 client 0x7fe3b9807400 IDENTIFY_ENVIRON COMMAND_MODE=unix2003
+1508569764.732743 peer 0x7fe3b9807a00 message 105
+1508569764.732748 client 0x7fe3b9807400 IDENTIFY_ENVIRON SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.Eh7fIaQTzy/Listeners
+1508569764.732751 peer 0x7fe3b9807a00 message 105
+1508569764.732756 client 0x7fe3b9807400 IDENTIFY_ENVIRON __CF_USER_TEXT_ENCODING=0x1F5:0x1:0xE
+1508569764.732759 peer 0x7fe3b9807a00 message 105
+1508569764.732769 client 0x7fe3b9807400 IDENTIFY_ENVIRON PATH=/usr/local/bin:/Users/kohei/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/kohei/Library/Android/sdk/platform-tools:/Users/kohei/.npm-global/bin
+1508569764.732774 peer 0x7fe3b9807a00 message 105
+1508569764.732778 client 0x7fe3b9807400 IDENTIFY_ENVIRON PWD=/Users/kohei/Desktop/kohei/compass
+1508569764.732782 peer 0x7fe3b9807a00 message 105
+1508569764.732786 client 0x7fe3b9807400 IDENTIFY_ENVIRON LANG=ja_JP.UTF-8
+1508569764.732789 peer 0x7fe3b9807a00 message 105
+1508569764.732794 client 0x7fe3b9807400 IDENTIFY_ENVIRON ITERM_PROFILE=Default
+1508569764.732797 peer 0x7fe3b9807a00 message 105
+1508569764.732801 client 0x7fe3b9807400 IDENTIFY_ENVIRON XPC_FLAGS=0x0
+1508569764.732805 peer 0x7fe3b9807a00 message 105
+1508569764.732809 client 0x7fe3b9807400 IDENTIFY_ENVIRON XPC_SERVICE_NAME=0
+1508569764.732813 peer 0x7fe3b9807a00 message 105
+1508569764.732817 client 0x7fe3b9807400 IDENTIFY_ENVIRON SHLVL=1
+1508569764.732820 peer 0x7fe3b9807a00 message 105
+1508569764.732824 client 0x7fe3b9807400 IDENTIFY_ENVIRON HOME=/Users/kohei
+1508569764.732828 peer 0x7fe3b9807a00 message 105
+1508569764.732832 client 0x7fe3b9807400 IDENTIFY_ENVIRON COLORFGBG=7;0
+1508569764.732835 peer 0x7fe3b9807a00 message 105
+1508569764.732840 client 0x7fe3b9807400 IDENTIFY_ENVIRON ITERM_SESSION_ID=w0t1p0:CB3599A2-D632-41D6-957E-8677C35E96EF
+1508569764.732843 peer 0x7fe3b9807a00 message 105
+1508569764.732854 client 0x7fe3b9807400 IDENTIFY_ENVIRON LOGNAME=kohei
+1508569764.732857 peer 0x7fe3b9807a00 message 105
+1508569764.732862 client 0x7fe3b9807400 IDENTIFY_ENVIRON DISPLAY=/private/tmp/com.apple.launchd.btrcCOfvMh/org.macosforge.xquartz:0
+1508569764.732866 peer 0x7fe3b9807a00 message 105
+1508569764.732878 client 0x7fe3b9807400 IDENTIFY_ENVIRON SECURITYSESSIONID=186a7
+1508569764.732882 peer 0x7fe3b9807a00 message 105
+1508569764.732886 client 0x7fe3b9807400 IDENTIFY_ENVIRON COLORTERM=truecolor
+1508569764.732890 peer 0x7fe3b9807a00 message 105
+1508569764.732894 client 0x7fe3b9807400 IDENTIFY_ENVIRON _=/usr/local/bin/tmate
+1508569764.732897 peer 0x7fe3b9807a00 message 106
+1508569764.733946 peer 0x7fe3b9807a00 message 200
+1508569764.733959 continuing cmdq 0x7fe3b860c210: flags 0, client 0x7fe3b9807400
+1508569764.733968 cmdq 0x7fe3b860c210: new-session
+1508569764.733973 preparing state for new-session (client 0x7fe3b9807400)
+1508569764.733978 cmd_find_current_session: have client 0x7fe3b9807400
+1508569764.733984 cmd_find_client: no target, return 0x0
+1508569764.733988 preparing -t state: target none
+1508569764.733991 cmd_prepare_state_flag: flag t 4 0x2
+1508569764.733995 cmd_find_current_session: have client 0x7fe3b9807400
+1508569764.733999 cmd_find_target: target none, type 2
+1508569764.734002 cmd_find_target: cmdq 0x7fe3b860c210, flags 0x2
+1508569764.734008 cmd_find_target: s=none
+1508569764.734011 cmd_find_target: wl=none
+1508569764.734014 cmd_find_target: wp=none
+1508569764.734017 cmd_find_target: idx=none
+1508569764.734020 preparing -s state: target none
+1508569764.734030 new term: xterm-256color
+1508569764.734694 xterm-256color override: XT 
+1508569764.734706 xterm-256color override: Ms \033]52;%p1%s;%p2%s\a
+1508569764.734712 xterm-256color override: Cs \033]12;%p1%s\a
+1508569764.734717 xterm-256color override: Cr \033]112\a
+1508569764.734722 xterm-256color override: Ss \033[%p1%d q
+1508569764.734726 xterm-256color override: Se \033[2 q
+1508569764.734783 new key \033Oo: 0x100000000045 (KP/)
+1508569764.734789 new key \033Oj: 0x100000000046 (KP*)
+1508569764.734793 new key \033Om: 0x100000000047 (KP-)
+1508569764.734796 new key \033Ow: 0x100000000048 (KP7)
+1508569764.734800 new key \033Ox: 0x100000000049 (KP8)
+1508569764.734803 new key \033Oy: 0x10000000004a (KP9)
+1508569764.734806 new key \033Ok: 0x10000000004b (KP+)
+1508569764.734810 new key \033Ot: 0x10000000004c (KP4)
+1508569764.734813 new key \033Ou: 0x10000000004d (KP5)
+1508569764.734816 new key \033Ov: 0x10000000004e (KP6)
+1508569764.734820 new key \033Oq: 0x10000000004f (KP1)
+1508569764.734823 new key \033Or: 0x100000000050 (KP2)
+1508569764.734829 new key \033Os: 0x100000000051 (KP3)
+1508569764.734833 new key \033OM: 0x100000000052 (KPEnter)
+1508569764.734836 new key \033Op: 0x100000000053 (KP0)
+1508569764.734839 new key \033On: 0x100000000054 (KP.)
+1508569764.734843 new key \033OA: 0x100000000041 (Up)
+1508569764.734846 new key \033OB: 0x100000000042 (Down)
+1508569764.734850 new key \033OC: 0x100000000044 (Right)
+1508569764.734853 new key \033OD: 0x100000000043 (Left)
+1508569764.734857 new key \033[A: 0x100000000041 (Up)
+1508569764.734860 new key \033[B: 0x100000000042 (Down)
+1508569764.734863 new key \033[C: 0x100000000044 (Right)
+1508569764.734867 new key \033[D: 0x100000000043 (Left)
+1508569764.734870 new key \033OH: 0x10000000003c (Home)
+1508569764.734873 new key \033OF: 0x10000000003d (End)
+1508569764.734877 new key \033[H: 0x10000000003c (Home)
+1508569764.734880 new key \033[F: 0x10000000003d (End)
+1508569764.734884 new key \033Oa: 0x500000000041 (C-Up)
+1508569764.734887 new key \033Ob: 0x500000000042 (C-Down)
+1508569764.734890 new key \033Oc: 0x500000000044 (C-Right)
+1508569764.734894 new key \033Od: 0x500000000043 (C-Left)
+1508569764.734897 new key \033[a: 0x900000000041 (S-Up)
+1508569764.734901 new key \033[b: 0x900000000042 (S-Down)
+1508569764.734904 new key \033[c: 0x900000000044 (S-Right)
+1508569764.734907 new key \033[d: 0x900000000043 (S-Left)
+1508569764.734911 new key \033[11^: 0x50000000002e (C-F1)
+1508569764.734915 new key \033[12^: 0x50000000002f (C-F2)
+1508569764.734918 new key \033[13^: 0x500000000030 (C-F3)
+1508569764.734922 new key \033[14^: 0x500000000031 (C-F4)
+1508569764.734925 new key \033[15^: 0x500000000032 (C-F5)
+1508569764.734929 new key \033[17^: 0x500000000033 (C-F6)
+1508569764.734932 new key \033[18^: 0x500000000034 (C-F7)
+1508569764.734953 new key \033[19^: 0x500000000035 (C-F8)
+1508569764.734957 new key \033[20^: 0x500000000036 (C-F9)
+1508569764.734961 new key \033[21^: 0x500000000037 (C-F10)
+1508569764.734964 new key \033[23^: 0x500000000038 (C-F11)
+1508569764.734967 new key \033[24^: 0x500000000039 (C-F12)
+1508569764.734971 new key \033[2^: 0x50000000003a (C-IC)
+1508569764.734974 new key \033[3^: 0x50000000003b (C-DC)
+1508569764.734978 new key \033[7^: 0x50000000003c (C-Home)
+1508569764.734981 new key \033[8^: 0x50000000003d (C-End)
+1508569764.734985 new key \033[6^: 0x50000000003e (C-NPage)
+1508569764.734988 new key \033[5^: 0x50000000003f (C-PPage)
+1508569764.734992 new key \033[11$: 0x90000000002e (S-F1)
+1508569764.734995 new key \033[12$: 0x90000000002f (S-F2)
+1508569764.734999 new key \033[13$: 0x900000000030 (S-F3)
+1508569764.735002 new key \033[14$: 0x900000000031 (S-F4)
+1508569764.735006 new key \033[15$: 0x900000000032 (S-F5)
+1508569764.735009 new key \033[17$: 0x900000000033 (S-F6)
+1508569764.735012 new key \033[18$: 0x900000000034 (S-F7)
+1508569764.735016 new key \033[19$: 0x900000000035 (S-F8)
+1508569764.735019 new key \033[20$: 0x900000000036 (S-F9)
+1508569764.735023 new key \033[21$: 0x900000000037 (S-F10)
+1508569764.735026 new key \033[23$: 0x900000000038 (S-F11)
+1508569764.735029 new key \033[24$: 0x900000000039 (S-F12)
+1508569764.735033 new key \033[2$: 0x90000000003a (S-IC)
+1508569764.735036 new key \033[3$: 0x90000000003b (S-DC)
+1508569764.735040 new key \033[7$: 0x90000000003c (S-Home)
+1508569764.735043 new key \033[8$: 0x90000000003d (S-End)
+1508569764.735046 new key \033[6$: 0x90000000003e (S-NPage)
+1508569764.735050 new key \033[5$: 0x90000000003f (S-PPage)
+1508569764.735053 new key \033[11@: 0xd0000000002e (C-S-F1)
+1508569764.735057 new key \033[12@: 0xd0000000002f (C-S-F2)
+1508569764.735060 new key \033[13@: 0xd00000000030 (C-S-F3)
+1508569764.735064 new key \033[14@: 0xd00000000031 (C-S-F4)
+1508569764.735067 new key \033[15@: 0xd00000000032 (C-S-F5)
+1508569764.735071 new key \033[17@: 0xd00000000033 (C-S-F6)
+1508569764.735074 new key \033[18@: 0xd00000000034 (C-S-F7)
+1508569764.735080 new key \033[19@: 0xd00000000035 (C-S-F8)
+1508569764.735084 new key \033[20@: 0xd00000000036 (C-S-F9)
+1508569764.735087 new key \033[21@: 0xd00000000037 (C-S-F10)
+1508569764.735091 new key \033[23@: 0xd00000000038 (C-S-F11)
+1508569764.735094 new key \033[24@: 0xd00000000039 (C-S-F12)
+1508569764.735098 new key \033[2@: 0xd0000000003a (C-S-IC)
+1508569764.735101 new key \033[3@: 0xd0000000003b (C-S-DC)
+1508569764.735104 new key \033[7@: 0xd0000000003c (C-S-Home)
+1508569764.735108 new key \033[8@: 0xd0000000003d (C-S-End)
+1508569764.735111 new key \033[6@: 0xd0000000003e (C-S-NPage)
+1508569764.735115 new key \033[5@: 0xd0000000003f (C-S-PPage)
+1508569764.735126 new key \033[I: 0x100000000000 (Invalid#100000000000)
+1508569764.735130 new key \033[O: 0x100000000001 (Invalid#100000000001)
+1508569764.735134 new key \033OP: 0x10000000002e (F1)
+1508569764.735137 new key \033OQ: 0x10000000002f (F2)
+1508569764.735141 new key \033OR: 0x100000000030 (F3)
+1508569764.735144 new key \033OS: 0x100000000031 (F4)
+1508569764.735147 new key \033[15~: 0x100000000032 (F5)
+1508569764.735151 new key \033[17~: 0x100000000033 (F6)
+1508569764.735154 new key \033[18~: 0x100000000034 (F7)
+1508569764.735158 new key \033[19~: 0x100000000035 (F8)
+1508569764.735161 new key \033[20~: 0x100000000036 (F9)
+1508569764.735164 new key \033[21~: 0x100000000037 (F10)
+1508569764.735168 new key \033[23~: 0x100000000038 (F11)
+1508569764.735171 new key \033[24~: 0x100000000039 (F12)
+1508569764.735175 new key \033[1;2P: 0x90000000002e (S-F1)
+1508569764.735178 new key \033[1;2Q: 0x90000000002f (S-F2)
+1508569764.735182 new key \033[1;2R: 0x900000000030 (S-F3)
+1508569764.735185 new key \033[1;2S: 0x900000000031 (S-F4)
+1508569764.735189 new key \033[15;2~: 0x900000000032 (S-F5)
+1508569764.735192 new key \033[17;2~: 0x900000000033 (S-F6)
+1508569764.735196 new key \033[18;2~: 0x900000000034 (S-F7)
+1508569764.735200 new key \033[19;2~: 0x900000000035 (S-F8)
+1508569764.735206 new key \033[20;2~: 0x900000000036 (S-F9)
+1508569764.735217 new key \033[21;2~: 0x900000000037 (S-F10)
+1508569764.735221 new key \033[23;2~: 0x900000000038 (S-F11)
+1508569764.735224 new key \033[24;2~: 0x900000000039 (S-F12)
+1508569764.735228 new key \033[1;5P: 0x50000000002e (C-F1)
+1508569764.735232 new key \033[1;5Q: 0x50000000002f (C-F2)
+1508569764.735235 new key \033[1;5R: 0x500000000030 (C-F3)
+1508569764.735238 new key \033[1;5S: 0x500000000031 (C-F4)
+1508569764.735242 new key \033[15;5~: 0x500000000032 (C-F5)
+1508569764.735246 new key \033[17;5~: 0x500000000033 (C-F6)
+1508569764.735249 new key \033[18;5~: 0x500000000034 (C-F7)
+1508569764.735253 new key \033[19;5~: 0x500000000035 (C-F8)
+1508569764.735256 new key \033[20;5~: 0x500000000036 (C-F9)
+1508569764.735259 new key \033[21;5~: 0x500000000037 (C-F10)
+1508569764.735263 new key \033[23;5~: 0x500000000038 (C-F11)
+1508569764.735266 new key \033[24;5~: 0x500000000039 (C-F12)
+1508569764.735270 new key \033[1;6P: 0xd0000000002e (C-S-F1)
+1508569764.735273 new key \033[1;6Q: 0xd0000000002f (C-S-F2)
+1508569764.735277 new key \033[1;6R: 0xd00000000030 (C-S-F3)
+1508569764.735280 new key \033[1;6S: 0xd00000000031 (C-S-F4)
+1508569764.735284 new key \033[15;6~: 0xd00000000032 (C-S-F5)
+1508569764.735290 new key \033[17;6~: 0xd00000000033 (C-S-F6)
+1508569764.735294 new key \033[18;6~: 0xd00000000034 (C-S-F7)
+1508569764.735298 new key \033[19;6~: 0xd00000000035 (C-S-F8)
+1508569764.735301 new key \033[20;6~: 0xd00000000036 (C-S-F9)
+1508569764.735305 new key \033[21;6~: 0xd00000000037 (C-S-F10)
+1508569764.735308 new key \033[23;6~: 0xd00000000038 (C-S-F11)
+1508569764.735312 new key \033[24;6~: 0xd00000000039 (C-S-F12)
+1508569764.735316 new key \033[1;3P: 0x30000000002e (M-F1)
+1508569764.735319 new key \033[1;3Q: 0x30000000002f (M-F2)
+1508569764.735323 new key \033[1;3R: 0x300000000030 (M-F3)
+1508569764.735326 new key \033[1;3S: 0x300000000031 (M-F4)
+1508569764.735329 new key \033[15;3~: 0x300000000032 (M-F5)
+1508569764.735333 new key \033[17;3~: 0x300000000033 (M-F6)
+1508569764.735336 new key \033[18;3~: 0x300000000034 (M-F7)
+1508569764.735340 new key \033[19;3~: 0x300000000035 (M-F8)
+1508569764.735343 new key \033[20;3~: 0x300000000036 (M-F9)
+1508569764.735347 new key \033[21;3~: 0x300000000037 (M-F10)
+1508569764.735350 new key \033[23;3~: 0x300000000038 (M-F11)
+1508569764.735354 new key \033[24;3~: 0x300000000039 (M-F12)
+1508569764.735357 new key \033[1;4P: 0xb0000000002e (M-S-F1)
+1508569764.735361 new key \033[1;4Q: 0xb0000000002f (M-S-F2)
+1508569764.735364 new key \033[1;4R: 0xb00000000030 (M-S-F3)
+1508569764.735368 new key \033[2~: 0x10000000003a (IC)
+1508569764.735371 new key \033[3~: 0x10000000003b (DC)
+1508569764.735375 replacing key \033OH: 0x10000000003c (Home)
+1508569764.735379 replacing key \033OF: 0x10000000003d (End)
+1508569764.735382 new key \033[6~: 0x10000000003e (NPage)
+1508569764.735385 new key \033[5~: 0x10000000003f (PPage)
+1508569764.735389 new key \033[Z: 0x100000000040 (BTab)
+1508569764.735393 replacing key \033OA: 0x100000000041 (Up)
+1508569764.735396 replacing key \033OB: 0x100000000042 (Down)
+1508569764.735399 replacing key \033OD: 0x100000000043 (Left)
+1508569764.735403 replacing key \033OC: 0x100000000044 (Right)
+1508569764.735406 new key \033[3;2~: 0x90000000003b (S-DC)
+1508569764.735410 new key \033[3;3~: 0x30000000003b (M-DC)
+1508569764.735413 new key \033[3;4~: 0xb0000000003b (M-S-DC)
+1508569764.735417 new key \033[3;5~: 0x50000000003b (C-DC)
+1508569764.735420 new key \033[3;6~: 0xd0000000003b (C-S-DC)
+1508569764.735424 new key \033[3;7~: 0x70000000003b (C-M-DC)
+1508569764.735428 new key \033[1;2B: 0x900000000042 (S-Down)
+1508569764.735431 new key \033[1;3B: 0x300000000042 (M-Down)
+1508569764.735435 new key \033[1;4B: 0xb00000000042 (M-S-Down)
+1508569764.735438 new key \033[1;5B: 0x500000000042 (C-Down)
+1508569764.735442 new key \033[1;6B: 0xd00000000042 (C-S-Down)
+1508569764.735445 new key \033[1;7B: 0x700000000042 (C-M-Down)
+1508569764.735449 new key \033[1;2F: 0x90000000003d (S-End)
+1508569764.735452 new key \033[1;3F: 0x30000000003d (M-End)
+1508569764.735462 new key \033[1;4F: 0xb0000000003d (M-S-End)
+1508569764.735466 new key \033[1;5F: 0x50000000003d (C-End)
+1508569764.735470 new key \033[1;6F: 0xd0000000003d (C-S-End)
+1508569764.735473 new key \033[1;7F: 0x70000000003d (C-M-End)
+1508569764.735477 new key \033[1;2H: 0x90000000003c (S-Home)
+1508569764.735480 new key \033[1;3H: 0x30000000003c (M-Home)
+1508569764.735484 new key \033[1;4H: 0xb0000000003c (M-S-Home)
+1508569764.735487 new key \033[1;5H: 0x50000000003c (C-Home)
+1508569764.735491 new key \033[1;6H: 0xd0000000003c (C-S-Home)
+1508569764.735494 new key \033[1;7H: 0x70000000003c (C-M-Home)
+1508569764.735498 new key \033[2;2~: 0x90000000003a (S-IC)
+1508569764.735501 new key \033[2;3~: 0x30000000003a (M-IC)
+1508569764.735505 new key \033[2;4~: 0xb0000000003a (M-S-IC)
+1508569764.735509 new key \033[2;5~: 0x50000000003a (C-IC)
+1508569764.735512 new key \033[2;6~: 0xd0000000003a (C-S-IC)
+1508569764.735519 new key \033[2;7~: 0x70000000003a (C-M-IC)
+1508569764.735523 new key \033[1;2D: 0x900000000043 (S-Left)
+1508569764.735526 new key \033[1;3D: 0x300000000043 (M-Left)
+1508569764.735530 new key \033[1;4D: 0xb00000000043 (M-S-Left)
+1508569764.735533 new key \033[1;5D: 0x500000000043 (C-Left)
+1508569764.735537 new key \033[1;6D: 0xd00000000043 (C-S-Left)
+1508569764.735540 new key \033[1;7D: 0x700000000043 (C-M-Left)
+1508569764.735544 new key \033[6;2~: 0x90000000003e (S-NPage)
+1508569764.735548 new key \033[6;3~: 0x30000000003e (M-NPage)
+1508569764.735551 new key \033[6;4~: 0xb0000000003e (M-S-NPage)
+1508569764.735555 new key \033[6;5~: 0x50000000003e (C-NPage)
+1508569764.735559 new key \033[6;6~: 0xd0000000003e (C-S-NPage)
+1508569764.735562 new key \033[6;7~: 0x70000000003e (C-M-NPage)
+1508569764.735566 new key \033[5;2~: 0x90000000003f (S-PPage)
+1508569764.735569 new key \033[5;3~: 0x30000000003f (M-PPage)
+1508569764.735575 new key \033[5;4~: 0xb0000000003f (M-S-PPage)
+1508569764.735579 new key \033[5;5~: 0x50000000003f (C-PPage)
+1508569764.735583 new key \033[5;6~: 0xd0000000003f (C-S-PPage)
+1508569764.735586 new key \033[5;7~: 0x70000000003f (C-M-PPage)
+1508569764.735590 new key \033[1;2C: 0x900000000044 (S-Right)
+1508569764.735594 new key \033[1;3C: 0x300000000044 (M-Right)
+1508569764.735597 new key \033[1;4C: 0xb00000000044 (M-S-Right)
+1508569764.735601 new key \033[1;5C: 0x500000000044 (C-Right)
+1508569764.735604 new key \033[1;6C: 0xd00000000044 (C-S-Right)
+1508569764.735608 new key \033[1;7C: 0x700000000044 (C-M-Right)
+1508569764.735612 new key \033[1;2A: 0x900000000041 (S-Up)
+1508569764.735615 new key \033[1;3A: 0x300000000041 (M-Up)
+1508569764.735619 new key \033[1;4A: 0xb00000000041 (M-S-Up)
+1508569764.735622 new key \033[1;5A: 0x500000000041 (C-Up)
+1508569764.735626 new key \033[1;6A: 0xd00000000041 (C-S-Up)
+1508569764.735629 new key \033[1;7A: 0x700000000041 (C-M-Up)
+1508569764.735650 new session 0 $0
+1508569764.735655 session 0 activity 1508569764.735653 (last 0.000000)
+1508569764.735689 @0 alerts flags added 0x2
+1508569764.735713 spawn: /bin/bash -- 
+1508569764.736273 @0 alerts timer reset 0
+1508569764.736302 @0 alerts flags added 0x2
+1508569764.736309 session 0 created
+1508569764.736325 sending message 207 to peer 0x7fe3b9807a00 (0 bytes)
+1508569764.736354 client 0x7fe3b9807400, status interval 15
+1508569764.736362 session 0 activity 1508569764.736359 (last 1508569764.735653)
+1508569764.736416 session 0 has 3 references
+1508569764.736424 session 0 has 2 references
+1508569764.736430 unref client 0x7fe3b9807400 (2 references)
+1508569764.736752 format '[#S] ' -> '[0] '
+1508569764.736974 format ' "#{=21:pane_title}" 16:09 21-10-17' -> ' "kohei.local" 16:09 21-10-17'
+1508569764.737171 format '#{window_flags}' -> '*'
+1508569764.737183 format '#I:#W#{?window_flags,#{window_flags}, }' -> '0:bash*'
+1508569764.737547 @0 active pane not changed
+1508569764.737687 @0 active pane not changed
+1508569764.737874 peer 0x7fe3b9807a00 message 208
+1508569764.737892 @0 active pane not changed
+1508569765.100926 [tmate] D Connecting to ssh.tmate.io...
+1508569765.100948 [tmate] D Trying server 159.203.36.122
+1508569765.104717 [tmate] D Trying server 46.101.170.73
+1508569765.104951 [tmate] D Trying server 188.166.217.223
+1508569765.105120 [tmate] D Trying server 188.226.143.183
+1508569765.105289 [tmate] D Trying server 159.203.237.156
+1508569765.105465 [tmate] D Trying server 104.236.9.236
+1508569765.105651 [tmate] D Trying server 46.101.84.153
+1508569765.105896 @0 active pane not changed
+1508569765.105924 @0 active pane not changed
+1508569765.347816 [tmate] D [1] [socket_callback_connected] socket_callback_connected: Socket connection callback: 1 (0)
+1508569765.347890 @0 active pane not changed
+1508569765.347929 [tmate] D [1] [ssh_client_connection_callback] ssh_client_connection_callback: SSH server banner: SSH-2.0-tmate
+1508569765.347935 [tmate] D [1] [ssh_analyze_banner] ssh_analyze_banner: Analyzing banner: SSH-2.0-tmate
+1508569765.347945 @0 active pane not changed
+1508569765.412933 [tmate] D [1] [socket_callback_connected] socket_callback_connected: Socket connection callback: 1 (0)
+1508569765.412989 @0 active pane not changed
+1508569765.413025 [tmate] D [1] [ssh_client_connection_callback] ssh_client_connection_callback: SSH server banner: SSH-2.0-tmate
+1508569765.413030 [tmate] D [1] [ssh_analyze_banner] ssh_analyze_banner: Analyzing banner: SSH-2.0-tmate
+1508569765.413035 @0 active pane not changed
+1508569765.479939 @0 active pane not changed
+1508569765.514830 [tmate] D [1] [socket_callback_connected] socket_callback_connected: Socket connection callback: 1 (0)
+1508569765.514887 @0 active pane not changed
+1508569765.514911 [tmate] D [1] [ssh_client_connection_callback] ssh_client_connection_callback: SSH server banner: SSH-2.0-tmate
+1508569765.514917 [tmate] D [1] [ssh_analyze_banner] ssh_analyze_banner: Analyzing banner: SSH-2.0-tmate
+1508569765.514924 @0 active pane not changed
+1508569765.556845 @0 active pane not changed
+1508569765.570809 [tmate] D [1] [socket_callback_connected] socket_callback_connected: Socket connection callback: 1 (0)
+1508569765.570871 @0 active pane not changed
+1508569765.570899 [tmate] D [1] [ssh_client_connection_callback] ssh_client_connection_callback: SSH server banner: SSH-2.0-tmate
+1508569765.570906 [tmate] D [1] [ssh_analyze_banner] ssh_analyze_banner: Analyzing banner: SSH-2.0-tmate
+1508569765.570913 @0 active pane not changed
+1508569765.630462 [tmate] D Establishing connection to 188.166.217.223
+1508569765.630541 [tmate] D Connected to 188.166.217.223
+1508569765.630546 [tmate] D SSH client killed (159.203.36.122)
+1508569765.630585 [tmate] D SSH client killed (46.101.170.73)
+1508569765.630602 [tmate] D SSH client killed (188.226.143.183)
+1508569765.630616 [tmate] D SSH client killed (159.203.237.156)
+1508569765.630634 [tmate] D SSH client killed (104.236.9.236)
+1508569765.630648 [tmate] D SSH client killed (46.101.84.153)
+1508569765.630886 [tmate] D [1] [ssh_agent_get_ident_count] ssh_agent_get_ident_count: Answer type: 12, expected answer: 12
+1508569765.631177 [tmate] D [1] [ssh_userauth_request_service] ssh_userauth_request_service: Failed to request "ssh-userauth" service
+1508569765.631193 @0 active pane not changed
+1508569765.750191 @0 active pane not changed
+1508569765.872446 @0 active pane not changed
+1508569765.991982 %0 has 21 bytes
+1508569765.991999 @0 alerts timer reset 0
+1508569765.992003 @0 alerts flags added 0x2
+1508569765.992012 input_parse: %0 ground, 21 bytes: kohei:compass kohei$ 
+1508569765.992042 @0 active pane changed
+1508569765.992104 format '#{pane_current_command}' -> 'bash'
+1508569765.992109 format '' -> ''
+1508569765.992113 format '#{?pane_in_mode,[tmux],#{pane_current_command}}#{?pane_dead,[dead],}' -> 'bash'
+1508569765.992131 @0 name not changed (still bash)
+1508569765.992151 @0 active pane not changed
+1508569765.995039 [tmate] D Auth successful
+1508569765.995345 @0 active pane not changed
+1508569766.135824 [tmate] D Session opened, initalizing tmate
+1508569766.135987 @0 active pane not changed
+1508569766.264949 [tmate] D Ready
+1508569766.265540 @0 active pane not changed
+1508569766.396096 @0 active pane not changed
+1508569767.003280 [tmate] D Note: clear your terminal before sharing readonly access
+1508569767.003376 [tmate] D web session read only: https://tmate.io/t/ro-7Z2fNQ9xTuLJ7Izeb36Yze9pW
+1508569767.003395 [tmate] D ssh session read only: ssh ro-7Z2fNQ9xTuLJ7Izeb36Yze9pW@sg2.tmate.io
+1508569767.003409 [tmate] D web session: https://tmate.io/t/Qn4VCij6jRaamY6O8EbAEd2nF
+1508569767.003422 [tmate] D ssh session: ssh Qn4VCij6jRaamY6O8EbAEd2nF@sg2.tmate.io
+1508569767.003811 @0 active pane not changed
+1508569767.003847 @0 active pane not changed
+1508569769.278181 [tmate] D [1] [ssh_packet_process] ssh_packet_process: Couldn't do anything with packet type 80
+1508569769.278309 @0 active pane not changed
+1508569770.929715 keys are 1 (:)
+1508569770.929733 complete key : 0x3a
+1508569770.929742 session 0 activity 1508569770.929739 (last 1508569764.736359)
+1508569770.929747 session 0 not pasting
+1508569770.929768 writing key 0x3a (:) to %0
+1508569770.929797 @0 active pane not changed
+1508569770.929822 @0 active pane not changed
+1508569770.929891 %0 has 1 bytes
+1508569770.929900 @0 alerts timer reset 0
+1508569770.929904 @0 alerts flags added 0x2
+1508569770.929909 input_parse: %0 ground, 1 bytes: :
+1508569770.930009 @0 active pane changed
+1508569770.930118 format '#{pane_current_command}' -> 'bash'
+1508569770.930136 format '' -> ''
+1508569770.930142 format '#{?pane_in_mode,[tmux],#{pane_current_command}}#{?pane_dead,[dead],}' -> 'bash'
+1508569770.930167 @0 name not changed (still bash)
+1508569770.930191 @0 active pane not changed
+1508569774.043444 keys are 1 (q)
+1508569774.043465 complete key q 0x71
+1508569774.043473 session 0 activity 1508569774.043470 (last 1508569770.929739)
+1508569774.043478 session 0 not pasting
+1508569774.043485 writing key 0x71 (q) to %0
+1508569774.043495 @0 active pane not changed
+1508569774.043515 @0 active pane not changed
+1508569774.043586 %0 has 1 bytes
+1508569774.043600 @0 alerts timer reset 0
+1508569774.043605 @0 alerts flags added 0x2
+1508569774.043611 input_parse: %0 ground, 1 bytes: q
+1508569774.043715 @0 active pane changed
+1508569774.043791 format '#{pane_current_command}' -> 'bash'
+1508569774.043811 format '' -> ''
+1508569774.043817 format '#{?pane_in_mode,[tmux],#{pane_current_command}}#{?pane_dead,[dead],}' -> 'bash'
+1508569774.043846 @0 name not changed (still bash)
+1508569774.043888 @0 active pane not changed
+1508569774.235906 keys are 1 (\r)
+1508569774.235924 complete key \r 0xd
+1508569774.235932 session 0 activity 1508569774.235929 (last 1508569774.043470)
+1508569774.235938 session 0 not pasting
+1508569774.235944 writing key 0xd (Enter) to %0
+1508569774.235955 @0 active pane not changed
+1508569774.235991 @0 active pane not changed
+1508569774.236085 %0 has 2 bytes
+1508569774.236099 @0 alerts timer reset 0
+1508569774.236104 @0 alerts flags added 0x2
+1508569774.236110 input_parse: %0 ground, 2 bytes: \r\n
+1508569774.236114 input_c0_dispatch: '\r'
+1508569774.236117 input_c0_dispatch: '\n'
+1508569774.236212 @0 active pane changed
+1508569774.236224 @0 name timer queued (307504 left)
+1508569774.236242 @0 active pane changed
+1508569774.236247 @0 name timer already queued (307475 left)
+1508569774.237084 %0 has 30 bytes
+1508569774.237097 @0 alerts timer reset 0
+1508569774.237102 @0 alerts flags added 0x2
+1508569774.237108 input_parse: %0 ground, 30 bytes: -bash: :q: command not found\r\n
+1508569774.237136 input_c0_dispatch: '\r'
+1508569774.237140 input_c0_dispatch: '\n'
+1508569774.237258 @0 active pane changed
+1508569774.237272 @0 name timer already queued (306451 left)
+1508569774.237295 @0 active pane changed
+1508569774.237300 @0 name timer already queued (306422 left)
+1508569774.237460 %0 has 21 bytes
+1508569774.237473 @0 alerts timer reset 0
+1508569774.237478 @0 alerts flags added 0x2
+1508569774.237483 input_parse: %0 ground, 21 bytes: kohei:compass kohei$ 
+1508569774.237558 @0 active pane changed
+1508569774.237565 @0 name timer already queued (306157 left)
+1508569774.237583 @0 active pane changed
+1508569774.237588 @0 name timer already queued (306135 left)
+1508569774.544955 @0 name timer expired
+1508569774.544998 @0 active pane changed
+1508569774.545117 format '#{pane_current_command}' -> 'bash'
+1508569774.545157 format '' -> ''
+1508569774.545167 format '#{?pane_in_mode,[tmux],#{pane_current_command}}#{?pane_dead,[dead],}' -> 'bash'
+1508569774.545211 @0 name not changed (still bash)
+1508569776.214158 keys are 1 (e)
+1508569776.214176 complete key e 0x65
+1508569776.214183 session 0 activity 1508569776.214181 (last 1508569774.235929)
+1508569776.214189 session 0 not pasting
+1508569776.214195 writing key 0x65 (e) to %0
+1508569776.214205 @0 active pane not changed
+1508569776.214260 @0 active pane not changed
+1508569776.214333 %0 has 1 bytes
+1508569776.214348 @0 alerts timer reset 0
+1508569776.214352 @0 alerts flags added 0x2
+1508569776.214358 input_parse: %0 ground, 1 bytes: e
+1508569776.214459 @0 active pane changed
+1508569776.214547 format '#{pane_current_command}' -> 'bash'
+1508569776.214559 format '' -> ''
+1508569776.214564 format '#{?pane_in_mode,[tmux],#{pane_current_command}}#{?pane_dead,[dead],}' -> 'bash'
+1508569776.214588 @0 name not changed (still bash)
+1508569776.214608 @0 active pane not changed
+1508569776.927924 keys are 1 (x)
+1508569776.927992 complete key x 0x78
+1508569776.928007 session 0 activity 1508569776.928004 (last 1508569776.214181)
+1508569776.928013 session 0 not pasting
+1508569776.928020 writing key 0x78 (x) to %0
+1508569776.928030 @0 active pane not changed
+1508569776.928050 @0 active pane not changed
+1508569776.928107 %0 has 1 bytes
+1508569776.928122 @0 alerts timer reset 0
+1508569776.928126 @0 alerts flags added 0x2
+1508569776.928131 input_parse: %0 ground, 1 bytes: x
+1508569776.928270 @0 active pane changed
+1508569776.928338 format '#{pane_current_command}' -> 'bash'
+1508569776.928348 format '' -> ''
+1508569776.928353 format '#{?pane_in_mode,[tmux],#{pane_current_command}}#{?pane_dead,[dead],}' -> 'bash'
+1508569776.928376 @0 name not changed (still bash)
+1508569776.928396 @0 active pane not changed
+1508569777.151007 keys are 1 (i)
+1508569777.151025 complete key i 0x69
+1508569777.151033 session 0 activity 1508569777.151030 (last 1508569776.928004)
+1508569777.151038 session 0 not pasting
+1508569777.151045 writing key 0x69 (i) to %0
+1508569777.151070 @0 active pane not changed
+1508569777.151103 @0 active pane not changed
+1508569777.151150 %0 has 1 bytes
+1508569777.151158 @0 alerts timer reset 0
+1508569777.151163 @0 alerts flags added 0x2
+1508569777.151168 input_parse: %0 ground, 1 bytes: i
+1508569777.151264 @0 active pane changed
+1508569777.151271 @0 name timer queued (277009 left)
+1508569777.151289 @0 active pane changed
+1508569777.151320 @0 name timer already queued (276973 left)
+1508569777.251237 keys are 1 (t)
+1508569777.251257 complete key t 0x74
+1508569777.251266 session 0 activity 1508569777.251263 (last 1508569777.151030)
+1508569777.251271 session 0 not pasting
+1508569777.251278 writing key 0x74 (t) to %0
+1508569777.251289 @0 active pane changed
+1508569777.251294 @0 name timer already queued (176986 left)
+1508569777.251317 @0 active pane changed
+1508569777.251324 @0 name timer already queued (176956 left)
+1508569777.251371 %0 has 1 bytes
+1508569777.251386 @0 alerts timer reset 0
+1508569777.251390 @0 alerts flags added 0x2
+1508569777.251396 input_parse: %0 ground, 1 bytes: t
+1508569777.251537 @0 active pane changed
+1508569777.251546 @0 name timer already queued (176734 left)
+1508569777.251565 @0 active pane changed
+1508569777.251571 @0 name timer already queued (176708 left)
+1508569777.425684 keys are 1 (\r)
+1508569777.425702 complete key \r 0xd
+1508569777.425709 session 0 activity 1508569777.425707 (last 1508569777.251263)
+1508569777.425715 session 0 not pasting
+1508569777.425721 writing key 0xd (Enter) to %0
+1508569777.425732 @0 active pane changed
+1508569777.425736 @0 name timer already queued (2543 left)
+1508569777.425754 @0 active pane changed
+1508569777.425758 @0 name timer already queued (2521 left)
+1508569777.425809 %0 has 2 bytes
+1508569777.425817 @0 alerts timer reset 0
+1508569777.425821 @0 alerts flags added 0x2
+1508569777.425826 input_parse: %0 ground, 2 bytes: \r\n
+1508569777.425830 input_c0_dispatch: '\r'
+1508569777.425833 input_c0_dispatch: '\n'
+1508569777.425933 @0 active pane changed
+1508569777.425940 @0 name timer already queued (2340 left)
+1508569777.425953 %0 has 8 bytes
+1508569777.425958 @0 alerts timer reset 0
+1508569777.425962 @0 alerts flags added 0x2
+1508569777.425966 input_parse: %0 ground, 8 bytes: logout\r\n
+1508569777.425981 input_c0_dispatch: '\r'
+1508569777.425985 input_c0_dispatch: '\n'
+1508569777.426037 @0 active pane changed
+1508569777.426043 @0 name timer already queued (2236 left)
+1508569777.426055 @0 active pane changed
+1508569777.426059 @0 name timer already queued (2220 left)
+1508569777.428347 @0 name timer expired
+1508569777.428380 @0 active pane changed
+1508569777.428469 format '#{pane_current_command}' -> 'bash'
+1508569777.428483 format '' -> ''
+1508569777.428489 format '#{?pane_in_mode,[tmux],#{pane_current_command}}#{?pane_dead,[dead],}' -> 'bash'
+1508569777.428526 @0 name not changed (still bash)
+1508569777.434124 cmd_find_from_window: s=$0
+1508569777.434136 cmd_find_from_window: wl=0 1 w=@0 bash
+1508569777.434140 cmd_find_from_window: wp=none
+1508569777.434143 cmd_find_from_window: idx=0
+1508569777.434148 session 0 has 2 references
+1508569777.434154 session 0 destroyed
+1508569777.434159 session 0 has 2 references
+1508569777.434163 session 0 has 1 references
+1508569777.434271 session 0 freed (0 references)
+1508569777.434299 sending message 203 to peer 0x7fe3b9807a00 (4 bytes)
+1508569777.434484 peer 0x7fe3b9807a00 message 205
+1508569777.434611 sending message 204 to peer 0x7fe3b9807a00 (0 bytes)
+1508569777.435017 lost client 0x7fe3b9807400
+1508569777.435045 remove peer 0x7fe3b9807a00
+1508569777.435055 unref client 0x7fe3b9807400 (1 references)
+1508569777.435083 free client 0x7fe3b9807400 (0 references)
+1508569777.435089 server loop exit

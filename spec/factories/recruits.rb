@@ -2,6 +2,7 @@ require 'faker'
 
 FactoryGirl.define do
   factory :recruit do
+    company_id 1
     occupation "その他企画・マーケティング"
     description "広告印刷・事務アシスタント\n
                 不動産広告の印刷業務や事務サポート業務をお任せいたします。通勤圏内の店舗での勤務になります。地域の不動産情報が載った折込広告やポスティング広告の印刷をはじめ、不動産にかかわる様々な事務サポート業務を行っていただきます。\n
