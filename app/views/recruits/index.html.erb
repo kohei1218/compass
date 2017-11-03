@@ -13,7 +13,13 @@
     <% @recruits.each do |recruit| %>
       <tr>
         <th>
-          <h1>recruit.</h1>
+          <h1><%= recruit.company.name  %></h1>
+          <%= image_tag 'sample_office', :size => '250x200', :class => "recruit_image" %>
+          <div class="recruit_content">
+            <p>職種: <%= recruit.occupation %></p>
+            <p>雇用形態: <%= recruit.employment_type %></p>
+            <p>仕事内容: <%= recruit %></p>
+          </div>
         </th>
       </tr>
     <% end %>
