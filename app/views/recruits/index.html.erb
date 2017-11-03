@@ -1,14 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Recruits</h1>
+<h1>募集一覧</h1>
 
 <table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
   <tbody>
     <% @recruits.each do |recruit| %>
       <tr>
@@ -18,13 +12,16 @@
           <div class="recruit_content">
             <p>職種: <%= recruit.occupation %></p>
             <p>雇用形態: <%= recruit.employment_type %></p>
-            <p>仕事内容: <%= recruit %></p>
+            <p>仕事内容: <%= recruit.job_summary %></p>
+            <p>給与・待遇: <%= recruit.salary %></p>
+            <p>勤務地: <%= recruit.location %></p>
           </div>
+          <%= link_to '詳細を見る', recruit_path(recruit) %>
+          <%= link_to 'お気に入りに追加', recruit_path(recruit) %>
+          <%= link_to '応募', recruit_path(recruit) %>
         </th>
       </tr>
     <% end %>
   </tbody>
+  <%= paginate(@recruits) %>
 </table>
-
-<br>
-

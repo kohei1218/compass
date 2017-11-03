@@ -1,1 +1,20 @@
 <p id="notice"><%= notice %></p>
+
+<div>
+  <h1><%= @recruit.company.name %></h1>
+  <%= image_tag 'sample_office', :size => '250x200' %>
+  <p>募集職種: <%= @recruit.employment_type %></p>
+  <p><%= @recruit.description %></p>
+  <h2>募集要項</h2>
+  <p>募集職種: <%= @recruit.employment_type %></p>
+  <p>仕事内容: <%= @recruit.job_summary %></p>
+  <p><%= @recruit.job_description %></p>
+  <p>対象: <%= @recruit.qualification %></p>
+  <p>雇用形態: <%= @recruit.employment_type %></p>
+  <p>給与・待遇: <%= @recruit.salary %></p>
+  <p>福利厚生: <%= @recruit.welfare %></p>
+  <p>勤務時間: <% @recruit.office_hours %></p>
+  <p>休日・休暇: <%= @recruit.holiday %></p>
+  <p>勤務地: <%= @recruit.location %></p>
+  <p>選考プロセス: <%= @recruit.screening_process %></p>
+</div>

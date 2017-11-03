@@ -4,7 +4,7 @@ class RecruitsController < ApplicationController
   # GET /recruits
   # GET /recruits.json
   def index
-    @recruits = Recruit.all
+    @recruits = Recruit.all.page(params[:page]).per(5).order("updated_at ASC")
   end
 
   # GET /recruits/1
@@ -19,6 +19,7 @@ class RecruitsController < ApplicationController
 
   # GET /recruits/1/edit
   def edit
+    @recruit = Recruit.find(params[:id])
   end
 
   # POST /recruits
