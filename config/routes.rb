@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :recruits, only: [:index, :show]
   resource :profile, only: [:show, :edit, :update]
 
+
   # Admin Routes
   namespace :admin do
     resources :dashboard, only: [:index]

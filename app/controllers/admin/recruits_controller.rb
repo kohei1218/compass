@@ -20,8 +20,9 @@ class Admin::RecruitsController < ApplicationController
 
   def create
     @recruit = Recruit.new(recruit_params)
+    @company = Company.all
     if @recruit.save
-      redirect_to [:admin, @recruit], notice: '求人が作成されました。'
+      redirect_to [:admin, @recruit, @company], notice: '求人が作成されました。'
     else
       render :new
     end
@@ -37,7 +38,7 @@ class Admin::RecruitsController < ApplicationController
 
   def destroy
     if @recruit.destroy
-      redirect_to admin_recruits_path, notice: '求人が削除されました。'
+      redirect_to admin_recruit_path @company, notice: '求人が削除されました。'
     else
 
     end
@@ -52,6 +53,8 @@ class Admin::RecruitsController < ApplicationController
       params.require(:recruit).permit(
           :occupation,
           :description,
+          :job_summary,
+          :job_description,
           :qualification,
           :employment_type,
           :salary,
@@ -61,6 +64,8 @@ class Admin::RecruitsController < ApplicationController
           :location,
           :consideration,
           :information,
-          :screening_process)
+          :screening_process,
+          :company_id,
+      )
     end
 end
