@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.app
-    command: bash -c "rm -f tmp/pids/server.pid && rails s -p 80 -b 0.0.0.0"
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 80 -b 0.0.0.0"
     working_dir: /app
     container_name: compass_app
     hostname: app
@@ -14,7 +14,7 @@ services:
       - 3000
     volumes:
       - ".:/app"
-      - bundle_install:/bundle
+      - bundle_install:/app/vendor/bundle
     links:
       - postgres
     tty: true
