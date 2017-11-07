@@ -12,7 +12,7 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
-//= require jquery
+//= require jquery/dist/jquery
 //= require bootstrap/dist/js/bootstrap
 //= require admin-lte/dist/js/adminlte
+//= require_tree .
