@@ -20,9 +20,9 @@ class Admin::RecruitsController < ApplicationController
 
   def create
     @recruit = Recruit.new(recruit_params)
-    @company = Company.all
+    # @company = Company.all
     if @recruit.save
-      redirect_to [:admin, @recruit, @company], notice: '求人が作成されました。'
+      redirect_to admin_recruits_path, notice: '求人が作成されました。'
     else
       render :new
     end

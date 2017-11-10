@@ -17,7 +17,7 @@
             <p>勤務地: <%= recruit.location %></p>
           </div>
           <%= link_to '詳細を見る', recruit_path(recruit) %>
-          <%= link_to 'お気に入りに追加', recruit_path(recruit) %>
+          <!--<%= button_to 'お気に入りに追加', recruit_favorites_path( { recruit_id: recruit.id, user_id: 1, }) %>-->
           <%= link_to '応募', recruit_path(recruit) %>
         </th>
       </tr>

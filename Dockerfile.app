@@ -7,9 +7,9 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs git yarn
 
 ENV APP_ROOT /app
-ENV BUNDLE_PATH $APP_ROOT/vendor/bundle
 RUN mkdir $APP_ROOT
 WORKDIR $APP_ROOT
+ENV BUNDLE_PATH $APP_ROOT/vendor/bundle
 
 COPY Gemfile $APP_ROOT
 COPY Gemfile.lock $APP_ROOT
