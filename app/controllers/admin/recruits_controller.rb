@@ -4,7 +4,18 @@ class Admin::RecruitsController < ApplicationController
   layout 'admin'
 
   def index
-    @recruits = Recruit.order('created_at DESC').page(params[:page])
+    recruits = Recruit.order('created_at DESC').page(params[:page])
+    recruits.each{ |recruit|
+      recruit.favorites.each { |favorite|
+        if (favorite.user_id == current_user.id)
+          recruit.isFavorite = true
+        else
+          recruit.isFavorite = false
+        end
+      }
+    }
+    binding.pry
+    @recruits = recruits
   end
 
   def show
@@ -66,6 +77,7 @@ class Admin::RecruitsController < ApplicationController
           :information,
           :screening_process,
           :company_id,
+          :image
       )
     end
 end

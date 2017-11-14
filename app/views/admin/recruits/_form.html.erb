@@ -73,6 +73,12 @@
       <%= f.label "会社" %>
       <%= f.select :company_id, @company.collect {|company| [company.name, company.id]} %>
     </div>
+    <div class="form_group">
+      <%= f.label "画像アップロード" %>
+      <%= f.file_field :image %>
+    </div>
+
+
   </div>
 
     <div class="box-footer">

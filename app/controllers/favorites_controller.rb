@@ -12,14 +12,17 @@ class FavoritesController < ApplicationController
     @favorite = Favorite.new(favorite_params)
     respond_to do |format|
       if @favorite.save
-        format.html { redirect_to @favorite, notice: 'Recruit was successfully created.' }
+        format.html { redirect_to recruits_path, notice: 'お気に入りに追加しました' }
       else
-        format.html { redirect_to  recruits_path }
+        format.html { redirect_to  recruits_path, notice:  @favorite.errors.full_messages }
       end
     end
   end
 
   def favorite_params
-    params.fetch(:favorite, {})
+    params.permit(
+        :user_id,
+        :recruit_id
+    )
   end
 end

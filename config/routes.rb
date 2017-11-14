@@ -8,11 +8,12 @@ Rails.application.routes.draw do
 
   # User Routes
   root controller: :home, action: :index
-  resources :recruits, only: [:index, :show], shallow: true do
+  resources :recruits, only: [:index, :show] do
     resource :favorites, only: [:create, :destroy]
   end
   resource :profile, only: [:show, :edit, :update]
   resources :voices, only: [:index]
+  resources :questions, only: [:index]
 
   # Admin Routes
   namespace :admin do

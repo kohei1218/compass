@@ -4,6 +4,7 @@ class Recruit < ApplicationRecord
   has_many :favorites
   has_many :favorite_users, class_name: "User", through: :favorites
   belongs_to :company
+  has_many :recruit_images
 
   validates :occupation, presence: true
 end
