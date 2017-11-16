@@ -5,15 +5,17 @@ class RecruitsController < ApplicationController
   # GET /recruits.json
   def index
     recruits = Recruit.all.page(params[:page]).per(5).order("updated_at ASC")
-    recruits.each{ |recruit|
-      recruit.favorites.each { |favorite|
-        if (favorite.user_id == current_user.id)
-          recruit.isFavorite = true
-        else
-          recruit.isFavorite = false
-        end
+    if (user_signed_in?)
+      recruits.each{ |recruit|
+        recruit.favorites.each { |favorite|
+          if (favorite.user_id == current_user.id)
+            recruit.isFavorite = true
+          else
+            recruit.isFavorite = false
+          end
+        }
       }
-    }
+    end
     @recruits = recruits
 
   end

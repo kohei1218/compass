@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Compass</title>
+    <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= yield :header_tags %>
@@ -28,7 +29,7 @@
               <span><%= current_user.email %>
                 <ul class="user__info">
                   <li>
-                    <a href="/users/<%= current_user.id %>">マイページ</a>
+                    <%= link_to "マイページ", profile_path %>
                     <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
                   </li>
                 </ul>

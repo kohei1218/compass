@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1>マイページ</h1>
+
+<% if user_signed_in? %>
+  <div>
+    <p></p>
+    <%= current_user.email %>
+  </div>
+<% else %>
+  <div>
+    <p>ログインせんか</p>
+  </div>
+<% end %>
