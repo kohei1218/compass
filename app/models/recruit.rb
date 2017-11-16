@@ -6,5 +6,6 @@ class Recruit < ApplicationRecord
   belongs_to :company
   has_many :recruit_images
 
+  attr_accessor :isFavorite
   validates :occupation, presence: true
 end
