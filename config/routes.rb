@@ -4,7 +4,11 @@ Rails.application.routes.draw do
       sessions:      'admin/sessions',
       passwords:     'admin/passwords',
   }
-  devise_for :users
+
+  devise_for :users, controllers: {
+      sessions: 'users/sessions',
+      registrations: 'users/registrations'
+  }
 
   # User Routes
   root controller: :home, action: :index
