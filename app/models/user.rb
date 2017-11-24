@@ -10,4 +10,13 @@ class User < ApplicationRecord
   has_many :favorite_recruits, class_name: "Recruit", through: :favorites
   has_many :view_logs
   has_many :viewed_recruits, class_name: "Recruit", through: :view_logs
+
+  def favorite?(recruit, user_id)
+    recruit.favorites.each do |favorite|
+      if favorite.user_id == user_id
+        return true
+      end
+    end
+    false
+  end
 end
