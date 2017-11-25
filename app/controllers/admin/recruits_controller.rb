@@ -4,17 +4,7 @@ class Admin::RecruitsController < ApplicationController
   layout 'admin'
 
   def index
-    recruits = Recruit.order('created_at DESC').page(params[:page])
-    recruits.each{ |recruit|
-      recruit.favorites.each { |favorite|
-        if (favorite.user_id == current_user.id)
-          recruit.isFavorite = true
-        else
-          recruit.isFavorite = false
-        end
-      }
-    }
-    @recruits = recruits
+    @recruits = Recruit.order('created_at DESC').page(params[:page])
   end
 
   def show
