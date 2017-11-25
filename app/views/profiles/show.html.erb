@@ -22,7 +22,7 @@
       <p>携帯電話番号: <%= current_user.cell_phone_number %></p>
       <p>障がい部位 : <%= current_user.first_handicapped_part %></p>
       <p>障がい等級 : <%= current_user.first_handicapped_level %></p>
-      <%= link_to 'お気に入り一覧', recruit_path(recruit) %>
+      <%= link_to 'お気に入り一覧', favorites_path %>
     </div>
   </div>
 <% else %>

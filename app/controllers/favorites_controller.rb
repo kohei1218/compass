@@ -1,5 +1,10 @@
 class FavoritesController < ApplicationController
   def index
+    @recruits = []
+    favorites = Favorite.where(user_id: current_user.id)
+    favorites.each do |favorite|
+      @recruits << favorite.recruit
+    end
   end
 
   def show

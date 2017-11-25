@@ -13,9 +13,10 @@ Rails.application.routes.draw do
   # User Routes
   root controller: :home, action: :index
   resources :recruits, only: [:index, :show] do
-    resource :favorites, only: [:create, :destroy, :index, :show]
+    resource :favorites, only: [:create, :destroy]
   end
   resource :profile, only: [:show, :edit, :update]
+  resources :favorites, only: [:index, :show]
   resources :voices, only: [:index]
   resources :questions, only: [:index]
 
