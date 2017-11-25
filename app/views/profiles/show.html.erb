@@ -23,6 +23,7 @@
       <p>障がい部位 : <%= current_user.first_handicapped_part %></p>
       <p>障がい等級 : <%= current_user.first_handicapped_level %></p>
       <%= link_to 'お気に入り一覧', favorites_path %>
+      <%=	link_to '応募済み一覧', job_applications_path %>
     </div>
   </div>
 <% else %>

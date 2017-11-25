@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>応募済み一覧</h1>
+
+<table>
+  <tbody>
+  <% if @recruits.nil? %>
+      <p>応募済みの求人はありません</p>
+  <% else %>
+      <% @recruits.each do |recruit| %>
+          <tr>
+            <th>
+              <h1><%= recruit.company.name %></h1>
+              <%= image_tag 'sample_office', :size => '250x200', :class => "recruit_image" %>
+              <div class="recruit_content">
+                <p>職種: <%= recruit.occupation %></p>
+                <p>雇用形態: <%= recruit.employment_type %></p>
+                <p>仕事内容: <%= recruit.job_summary %></p>
+                <p>給与・待遇: <%= recruit.salary %></p>
+                <p>勤務地: <%= recruit.location %></p>
+              </div>
+              <%= link_to '詳細を見る', recruit_path(recruit) %>
+            </th>
+          </tr>
+      <% end %>
+  <% end %>
+  </tbody>
+</table>
