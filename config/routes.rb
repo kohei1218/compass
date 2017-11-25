@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   resources :favorites, only: [:index, :show]
   resources :voices, only: [:index]
   resources :questions, only: [:index]
+  resources :job_applications, only: [:index, :show, :create]
 
   # Admin Routes
   namespace :admin do

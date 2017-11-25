@@ -19,4 +19,13 @@ class User < ApplicationRecord
     end
     false
   end
+
+  def application?(recruit, user_id)
+    recruit.job_applications.each do |job_application|
+      if job_application.user_id == user_id
+        return true
+      end
+    end
+    false
+  end
 end

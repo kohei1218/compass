@@ -15,13 +15,11 @@ class FavoritesController < ApplicationController
 
   def create
     @favorite = Favorite.new(favorite_params)
-    respond_to do |format|
       if @favorite.save
-        format.html { redirect_to recruits_path, notice: 'お気に入りに追加しました' }
+        redirect_to recruits_path, notice: 'お気に入りに追加しました'
       else
-        format.html { redirect_to  recruits_path, notice:  @favorite.errors.full_messages }
+        redirect_to  recruits_path, notice:  @favorite.errors.full_messages
       end
-    end
   end
 
   def destroy
