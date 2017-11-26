@@ -12,6 +12,7 @@ class Admin::RecruitsController < ApplicationController
 
   def new
     @recruit = Recruit.new
+    @recruit.recruit_images.build
     @company = Company.all
   end
 
@@ -65,7 +66,13 @@ class Admin::RecruitsController < ApplicationController
           :information,
           :screening_process,
           :company_id,
-          :image
+          recruit_images_attributes: [:file_name]
       )
     end
+
+  private
+  def create_params
+    params.require(:recruit).permit(recruit_images_attributes: [:image])
+  end
+
 end

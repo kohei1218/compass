@@ -75,7 +75,9 @@
     </div>
     <div class="form_group">
       <%= f.label "画像アップロード" %>
-      <%= f.file_field :image %>
+      <%= f.fields_for :recruit_images do |recruit_image| %>
+        <% recruit_image.file_field :file_name %>
+      <% end %>
     </div>
 
 

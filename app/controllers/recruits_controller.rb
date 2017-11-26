@@ -4,7 +4,7 @@ class RecruitsController < ApplicationController
   # GET /recruits
   # GET /recruits.json
   def index
-    @recruits = Recruit.all.page(params[:page]).per(5).order("updated_at ASC")
+    @recruits = Recruit.all.page(params[:page]).per(5).order("updated_at DESC")
   end
 
   # GET /recruits/1
