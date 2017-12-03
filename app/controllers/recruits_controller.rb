@@ -4,10 +4,8 @@ class RecruitsController < ApplicationController
   # GET /recruits
   # GET /recruits.json
   def index
-    if params[:location]
-      @recruits = Recruit.where("location like '%" + 'a' + "%'").page(params[:page]).per(20).order("updated_at DESC")
-    else
-      @recruits = Recruit.all.page(params[:page]).per(20).order("updated_at DESC")
+    @q = Recruit.search(params[:q])
+    @recruits = @q.result(distinct: true).page(params[:page]).per(20).order("updated_at DESC")
     end
   end
 
@@ -76,5 +74,4 @@ class RecruitsController < ApplicationController
   def recruit_params
     params.fetch(:recruit, {})
   end
-end
 
