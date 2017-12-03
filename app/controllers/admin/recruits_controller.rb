@@ -45,34 +45,29 @@ class Admin::RecruitsController < ApplicationController
   end
 
   private
-    def set_recruit
-      @recruit = Recruit.find(params[:id])
-    end
+  def set_recruit
+    @recruit = Recruit.find(params[:id])
+  end
 
-    def recruit_params
-      params.require(:recruit).permit(
-          :occupation,
-          :description,
-          :job_summary,
-          :job_description,
-          :qualification,
-          :employment_type,
-          :salary,
-          :welfare,
-          :office_hours,
-          :holiday,
-          :location,
-          :consideration,
-          :information,
-          :screening_process,
-          :company_id,
-          recruit_images_attributes: [:file_name]
-      )
-    end
-
-  private
-  def create_params
-    params.require(:recruit).permit(recruit_images_attributes: [:image])
+  def recruit_params
+    params.require(:recruit).permit(
+        :occupation,
+        :description,
+        :job_summary,
+        :job_description,
+        :qualification,
+        :employment_type,
+        :salary,
+        :welfare,
+        :office_hours,
+        :holiday,
+        :location,
+        :consideration,
+        :information,
+        :screening_process,
+        :company_id,
+        recruit_images_attributes: [:file_name]
+    )
   end
 
 end

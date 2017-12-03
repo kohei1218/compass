@@ -4,7 +4,11 @@ class RecruitsController < ApplicationController
   # GET /recruits
   # GET /recruits.json
   def index
-    @recruits = Recruit.all.page(params[:page]).per(5).order("updated_at DESC")
+    if params[:location]
+      @recruits = Recruit.where("location like '%" + 'a' + "%'").page(params[:page]).per(20).order("updated_at DESC")
+    else
+      @recruits = Recruit.all.page(params[:page]).per(20).order("updated_at DESC")
+    end
   end
 
   # GET /recruits/1
@@ -29,11 +33,11 @@ class RecruitsController < ApplicationController
 
     respond_to do |format|
       if @recruit.save
-        format.html { redirect_to @recruit, notice: 'Recruit was successfully created.' }
-        format.json { render :show, status: :created, location: @recruit }
+        format.html {redirect_to @recruit, notice: 'Recruit was successfully created.'}
+        format.json {render :show, status: :created, location: @recruit}
       else
-        format.html { render :new }
-        format.json { render json: @recruit.errors, status: :unprocessable_entity }
+        format.html {render :new}
+        format.json {render json: @recruit.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -43,11 +47,11 @@ class RecruitsController < ApplicationController
   def update
     respond_to do |format|
       if @recruit.update(recruit_params)
-        format.html { redirect_to @recruit, notice: 'Recruit was successfully updated.' }
-        format.json { render :show, status: :ok, location: @recruit }
+        format.html {redirect_to @recruit, notice: 'Recruit was successfully updated.'}
+        format.json {render :show, status: :ok, location: @recruit}
       else
-        format.html { render :edit }
-        format.json { render json: @recruit.errors, status: :unprocessable_entity }
+        format.html {render :edit}
+        format.json {render json: @recruit.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -57,19 +61,20 @@ class RecruitsController < ApplicationController
   def destroy
     @recruit.destroy
     respond_to do |format|
-      format.html { redirect_to recruits_url, notice: 'Recruit was successfully destroyed.' }
-      format.json { head :no_content }
+      format.html {redirect_to recruits_url, notice: 'Recruit was successfully destroyed.'}
+      format.json {head :no_content}
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_recruit
-      @recruit = Recruit.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_recruit
+    @recruit = Recruit.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def recruit_params
-      params.fetch(:recruit, {})
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def recruit_params
+    params.fetch(:recruit, {})
+  end
 end
+

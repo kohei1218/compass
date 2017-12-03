@@ -8,4 +8,9 @@ class Recruit < ApplicationRecord
   accepts_nested_attributes_for :recruit_images
 
   # validates :occupation, presence: true
+
+  def self.search_recruits params
+    where('location like params', params: "%#{'a'}%")
+  end
+
 end

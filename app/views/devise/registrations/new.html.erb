@@ -75,15 +75,15 @@
     <div class="select">
       <%= f.label "障害について" %><br/>
       <%= f.label "部位" %><br/>
-      <%= f.select :first_handicapped_part, @viewData["handicappedies"] %>
-      <%=	f.select :first_handicapped_level, @viewData["levels"] %>
+      <%= f.select :first_handicapped_part, Constants::HANDICAPEDIES %>
+      <%=	f.select :first_handicapped_level, Constants::HANDICAPED_LEVELS %>
     </div>
 
     <div class="select">
       <%= f.label "障害について2" %><br/>
       <%= f.label "部位" %><br/>
-      <%= f.select :second_handicapped_part, @viewData["handicappedies"] %>
-      <%=	f.select :second_handicapped_level, @viewData["levels"] %>
+      <%= f.select :second_handicapped_part, Constants::HANDICAPEDIES %>
+      <%=	f.select :second_handicapped_level, Constants::HANDICAPED_LEVELS %>
     </div>
 
     <div class="actions">
