@@ -1,4 +1,6 @@
 class FavoritesController < ApplicationController
+  layout 'user'
+
   def index
     @recruits = []
     favorites = Favorite.where(user_id: current_user.id)

@@ -12,37 +12,6 @@
   <% body_classes ||= @body_classes %>
 
   <body class="<%= body_classes %>">
-  <header class="header">
-    <div class="header__bar">
-      <h1 class="header_left"><a href="/">compass</a></h1>
-      <div>
-        <ul>
-          <li>
-            <%= link_to "求人検索", recruits_path %>
-            <%= link_to "転職者の声", voices_path  %>
-            <%= link_to "よくある質問", questions_path %>
-          </li>
-        </ul>
-      </div>
-      <% if user_signed_in? %>
-          <div class="user_nav grid-6">
-              <span><%= current_user.email %>
-                <ul class="user__info">
-                  <li>
-                    <%= link_to "マイページ", profile_path %>
-                    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-                  </li>
-                </ul>
-              </span>
-          </div>
-      <% else %>
-          <div class="header_right">
-            <%= link_to "ログイン", new_user_session_path, :class => 'post' %>
-            <%= link_to "新規登録", new_user_registration_path, :class => 'post' %>
-          </div>
-      <% end %>
-    </div>
-  </header>
     <%= content_for?(:content) ? yield(:content) : yield %>
   </body>
 </html>

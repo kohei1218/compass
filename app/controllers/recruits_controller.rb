@@ -1,5 +1,6 @@
 class RecruitsController < ApplicationController
   before_action :set_recruit, only: [:show, :edit, :update, :destroy]
+  layout 'user'
 
   # GET /recruits
   # GET /recruits.json

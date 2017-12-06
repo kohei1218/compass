@@ -1,4 +1,5 @@
 class ProfilesController < ApplicationController
+  layout 'user'
   def show
   end
 

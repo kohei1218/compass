@@ -1,4 +1,6 @@
 class JobApplicationsController < ApplicationController
+  layout 'user'
+
   def index
     @recruits = []
     applications = JobApplication.where(user_id: current_user.id)
