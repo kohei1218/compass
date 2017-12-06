@@ -4,7 +4,7 @@ class Admin::RecruitsController < ApplicationController
   layout 'admin'
 
   def index
-    @recruits = Recruit.order('created_at DESC').page(params[:page])
+    @recruits = Recruit.order('created_at DESC').page(params[:page]).per(20)
   end
 
   def show

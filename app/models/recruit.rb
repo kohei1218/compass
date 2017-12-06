@@ -9,8 +9,8 @@ class Recruit < ApplicationRecord
 
   # validates :occupation, presence: true
 
-  def self.search_recruits params
-    where('location like params', params: "%#{'a'}%")
-  end
+  # def self.search_recruits params
+  #   where('location like params', params: "%#{'a'}%")
+  # end
 
 end
