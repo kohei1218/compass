@@ -19,7 +19,7 @@ class Admin::CompaniesController < ApplicationController
   def create
     @company = Company.new(company_params)
     if @company.save
-      redirect_to admin_recruit_path, notice: '会社が作成されました'
+      redirect_to admin_companies_path, notice: '会社が作成されました'
     else
       render :new
     end

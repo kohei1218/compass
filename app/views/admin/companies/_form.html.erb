@@ -1,0 +1,58 @@
+<%= form_with(model: [:admin, company], local: true) do |f| %>
+    <% if company.errors.any? %>
+        <div class="box-body">
+          <div class="alert alert-dismissable alert-danger">
+            <button class="close" data-dismiss="alert" aria-hidden="true">☓</button>
+            <ul>
+              <% company.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+    <% end %>
+
+    <div class="box-body">
+      <div class="form-group">
+        <%= f.label "会社名" %>
+        <%= f.text_area :name, class: 'form-control' %>
+      </div>
+      <div class="select">
+        <%= f.label "adminかどうか" %>
+        <%= f.select :admin, [['adminじゃない', false ], ['admin', true]] %>
+      </div>
+      <div class="form-group">
+        <%= f.label "会社詳細" %>
+        <%= f.text_area :description, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label "創立" %>
+        <%= f.text_area :establishment_date, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label "代表" %>
+        <%= f.text_area :representative, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label "従業員数" %>
+        <%= f.text_area :employees, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label "資本金" %>
+        <%= f.text_area :capital, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label "事業内容" %>
+        <%= f.text_area :business, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label "URL" %>
+        <%= f.text_area :url, class: 'form-control' %>
+      </div>
+
+    </div>
+
+    <div class="box-footer">
+      <%= f.submit class: "btn btn-primary btn-flat" %>
+    </div>
+<% end %>
