@@ -1,0 +1,101 @@
+<div class="box-body">
+  <div class="box box-primary">
+    <div class="box-header with-border">
+      <h3 class="box-title">求人詳細</h3>
+    </div>
+    <div class="box-body">
+      <strong><i class="fa fa-book margin-r-5"></i>応募人情報</strong>
+      <p class="text-muted">
+        名前 : <%= @job_application.user.first_name %> <%= @job_application.user.last_name %>
+      </p>
+      <hr>
+      <p class="text-muted">
+        メールアドレス : <%= @job_application.user.email %>
+      </p>
+      <hr>
+      <p class="text-muted">
+        性別 : <%= @job_application.user.sex %>
+      </p>
+      <hr>
+      <p class="text-muted">
+        固定電話 : <%= @job_application.user.phone_number %>
+      </p>
+      <hr>
+      <p class="text-muted">
+        携帯電話 : <%= @job_application.user.cell_phone_number %>
+      </p>
+      <hr>
+      <p class="text-muted">
+        現在の状況 : <%= @job_application.user.employed_status %>
+      </p>
+      <hr>
+      <p class="text-muted">
+        障害部位 : <%= @job_application.user.first_handicapped_part %>
+      </p>
+      <hr>
+      <p class="text-muted">
+        障害レベル : <%= @job_application.user.first_handicapped_level %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 募集会社</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.company.name %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 募集内容</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.description %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 対象となる方</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.qualification %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 雇用形態</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.employment_type %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 給与・待遇</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.salary %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 福利厚生</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.welfare %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 勤務時間</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.salary %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 休日・休暇</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.holiday %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 勤務地</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.location %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 障がいへの配慮</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.consideration %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> その他</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.information %>
+      </p>
+      <hr>
+      <strong><i class="fa fa-book margin-r-5"></i> 選考プロセス</strong>
+      <p class="text-muted">
+        <%= @job_application.recruit.screening_process %>
+      </p>
+    </div>
+  </div>
+</div>

@@ -27,6 +27,7 @@ Rails.application.routes.draw do
     resources :recruits
     resources :companies
     resources :users, only: [:index, :show]
+    resources :job_applications, only: [:index, :show]
     resource :profile, only: [:show, :edit, :update]
   end
 end

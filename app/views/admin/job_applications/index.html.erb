@@ -1,0 +1,32 @@
+<section class="content-header">
+  <h1>応募一覧</h1>
+</section>
+<section class="content">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box box-primary">
+        <div class="box-header">
+          <h3 class="box-title"></h3>
+          <div class="box-body table-responsive no-padding">
+            <table class="table table-hover">
+              <tr>
+                <th>募集会社</th>
+                <th>仕事内容</th>
+                <th>応募人メールアドレス</th>
+              </tr>
+              <% @job_applications.each do |job_application| %>
+                  <tr>
+                    <td><%= job_application.recruit.company.name %></td>
+                    <td><%= job_application.recruit.description %></td>
+                    <td><%= job_application.user.email %></td>
+                    <td><%= link_to "詳細", admin_job_application_path(job_application) %></td>
+                  </tr>
+              <% end %>
+            </table>
+            <%= paginate @job_applications %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
