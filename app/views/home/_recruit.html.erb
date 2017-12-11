@@ -1,0 +1,30 @@
+<tr>
+  <th>
+    <h1><%= recruit.company.name  %></h1>
+    <%= image_tag 'sample_office', :size => '250x200', :class => "recruit_image" %>
+    <div class="recruit_content">
+      <p>職種: <%= recruit.occupation %></p>
+      <p>雇用形態: <%= recruit.employment_type %></p>
+      <p>仕事内容: <%= recruit.job_summary %></p>
+      <p>給与・待遇: <%= recruit.salary %></p>
+      <p>勤務地: <%= recruit.location %></p>
+    </div>
+    <%= link_to '詳細を見る', recruit_path(recruit) %>
+
+    <% if user_signed_in? %>
+        <% if current_user.favorite?(recruit, current_user.id) %>
+            <%= button_to 'お気に入りから削除', recruit_favorites_path( { recruit_id: recruit.id, user_id: current_user.id, }),  method: :delete %>
+        <% else %>
+            <%= button_to 'お気に入りに追加', recruit_favorites_path( { recruit_id: recruit.id, user_id: current_user.id, }) %>
+        <% end %>
+        <% if current_user.application?(recruit, current_user.id) %>
+            <p>応募済み</p>
+        <% else %>
+            <%= button_to '応募する', job_applications_path( { recruit_id: recruit.id, user_id: current_user.id, }) %>
+        <% end %>
+    <% else %>
+        <!--TODO 登録画面に飛ばす-->
+        <!--<%= button_to 'お気に入りに追加', voices_path, method: :get  %>-->
+    <% end %>
+  </th>
+</tr>
