@@ -19,7 +19,7 @@
       <ul>
         <li>
           <%= link_to "求人検索", recruits_path %>
-          <%= link_to "転職者の声", voices_path  %>
+          <%= link_to "転職者の声", voices_path %>
           <%= link_to "よくある質問", questions_path %>
         </li>
       </ul>
@@ -45,4 +45,20 @@
 </header>
 <%= content_for?(:content) ? yield(:content) : yield %>
 </body>
+
+<footer>
+  <div class="footer__bar">
+    <div>
+      <ul>
+        <li>
+          <%= link_to '運営会社', 'http://logz.co.jp', target: :_blank %>
+          <%= link_to 'よくある質問', questions_path %>
+          <%= link_to 'サイトマップ', sitemaps_path %>
+          <%= link_to '個人情報の取り扱いについて', questions_path %>
+          <%= link_to 'お問い合わせ', questions_path %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 </html>
