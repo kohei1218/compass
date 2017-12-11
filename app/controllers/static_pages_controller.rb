@@ -3,4 +3,8 @@ class StaticPagesController < ApplicationController
 
   def privacy
   end
+
+  def sitemaps
+  end
+
 end

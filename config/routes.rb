@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   # static_pages
   get '/privacy', to: 'static_pages#privacy'
+  get '/sitemaps', to: 'static_pages#sitemaps'
 
   # User Routes
   root controller: :home, action: :index
