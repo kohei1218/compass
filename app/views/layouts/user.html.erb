@@ -18,9 +18,9 @@
     <div>
       <ul>
         <li>
-          <%= link_to "求人検索", recruits_path %>
-          <%= link_to "転職者の声", voices_path %>
-          <%= link_to "よくある質問", questions_path %>
+          <%= link_to '求人検索', recruits_path %>
+          <%= link_to '転職者の声', voices_path %>
+          <%= link_to 'よくある質問', questions_path %>
         </li>
       </ul>
     </div>
@@ -29,16 +29,16 @@
               <span><%= current_user.email %>
                 <ul class="user__info">
                   <li>
-                    <%= link_to "マイページ", profile_path %>
-                    <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+                    <%= link_to 'マイページ', profile_path %>
+                    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
                   </li>
                 </ul>
               </span>
         </div>
     <% else %>
         <div class="header_right">
-          <%= link_to "ログイン", new_user_session_path, :class => 'post' %>
-          <%= link_to "新規登録", new_user_registration_path, :class => 'post' %>
+          <%= link_to 'ログイン', new_user_session_path, :class => 'post' %>
+          <%= link_to '新規登録', new_user_registration_path, :class => 'post' %>
         </div>
     <% end %>
   </div>

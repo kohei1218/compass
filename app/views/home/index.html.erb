@@ -1,14 +1,32 @@
-<h2><%= @company_count %>企業　<%= @recruit_count %>求人掲載中</h2><br>
+<div class="top_sidebar">
+  <% if !user_signed_in? %>
+      <%= link_to 'ログイン', new_user_session_path, :class => 'post' %>
+      <%= link_to '新規登録', new_user_registration_path, :class => 'post' %>
+  <% end %>
 
-<%= search_form_for @q, url: recruits_url do |f| %>
-    <%= f.select :location_cont, Constants::SEARCH_AREAS, include_blank: "こだわらない" %>
-    <%= f.select :employment_type_cont, Constants::EMPLOYMENT_TYPES, include_blank: "こだわらない" %>
-    <%= f.select :occupation_cont, Constants::OCCUPATION_TYPES, include_blank: "こだわらない" %>
-    <%= f.text_field :location_or_employment_type_or_occupation_or_company_name_or_description_cont %>
-    <%= f.submit %>
-<% end %><br>
-<table>
-  <tbody>
-  <%= render @recruits %>
-  </tbody>
-</table>
+  <div>転職者の声</div>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  <div>転職者の声</div>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  <div>転職者の声</div>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+</div>
+
+<div class="top_content">
+  <h2><%= @company_count %>企業　<%= @recruit_count %>求人掲載中</h2><br>
+
+  <%= search_form_for @q, url: recruits_url do |f| %>
+      <%= f.select :location_cont, Constants::SEARCH_AREAS, include_blank: "こだわらない" %>
+      <%= f.select :employment_type_cont, Constants::EMPLOYMENT_TYPES, include_blank: "こだわらない" %>
+      <%= f.select :occupation_cont, Constants::OCCUPATION_TYPES, include_blank: "こだわらない" %>
+      <%= f.text_field :location_or_employment_type_or_occupation_or_company_name_or_description_cont %>
+      <%= f.submit %>
+  <% end %><br>
+  <table>
+    <tbody>
+    <%= render @recruits %>
+    </tbody>
+  </table>
+
+</div>
