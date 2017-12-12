@@ -16,3 +16,8 @@
 //= require bootstrap/dist/js/bootstrap
 //= require admin-lte/dist/js/adminlte
 //= require_tree .
+
+// var ready = function () {
+//     return $(window).trigger('resize');
+// };
+// document.addEventListener('turbolinks:load', ready);
