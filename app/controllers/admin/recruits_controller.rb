@@ -22,6 +22,7 @@ class Admin::RecruitsController < ApplicationController
 
   def create
     @recruit = Recruit.new(recruit_params)
+    @recruit.recruit_images.build
     @company = Company.all
     if @recruit.save
       redirect_to admin_recruits_path, notice: '求人が作成されました。'

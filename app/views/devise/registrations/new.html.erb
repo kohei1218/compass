@@ -1,3 +1,4 @@
+<p id="notice"><%= notice %></p>
 <h2>会員登録</h2>
 
 <%= form_for(resource, as: resource_name, url: user_registration_path) do |f| %>
@@ -82,8 +83,8 @@
     <div class="select">
       <%= f.label "障害について2" %><br/>
       <%= f.label "部位" %><br/>
-      <%= f.select :second_handicapped_part, Constants::HANDICAPEDIES %>
-      <%=	f.select :second_handicapped_level, Constants::HANDICAPED_LEVELS %>
+      <%= f.select :second_handicapped_part, Constants::HANDICAPEDIES, include_blank: "未選択" %>
+      <%=	f.select :second_handicapped_level, Constants::HANDICAPED_LEVELS, include_blank: "未選択" %>
     </div>
 
     <div class="actions">

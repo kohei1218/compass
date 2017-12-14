@@ -34,6 +34,17 @@ ja:
         screening_process: 選考プロセス
         job_summary: 仕事内容サマリー
         job_description: 仕事内容詳細
+      user:
+        first_name: 姓
+        last_name: 名
+        first_name_kana: 姓(カナ)
+        last_name_kana: 名(カナ)
+        sex: 性別
+        birthday: 生年月日
+        phone_or_cellphone: 固定電話番号または携帯電話番号
+        employed_status: 現在の状況
+        first_handicapped_part: 障害について・部位
+        first_handicapped_level: 障害について・等級
 
   date:
     abbr_day_names:
