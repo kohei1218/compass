@@ -17,10 +17,12 @@ class Admin::RecruitsController < ApplicationController
   end
 
   def edit
+    @company = Company.all
   end
 
   def create
     @recruit = Recruit.new(recruit_params)
+    @company = Company.all
     if @recruit.save
       redirect_to admin_recruits_path, notice: '求人が作成されました。'
     else
