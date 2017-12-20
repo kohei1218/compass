@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171103134045) do
+ActiveRecord::Schema.define(version: 20171220093839) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -134,6 +134,31 @@ ActiveRecord::Schema.define(version: 20171103134045) do
     t.string "second_handicapped_level"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "prefecture"
+    t.string "address"
+    t.string "station"
+    t.string "final_education"
+    t.string "school_name"
+    t.string "graduate_date"
+    t.string "wheelchair"
+    t.string "car_commute"
+    t.string "phone_support"
+    t.string "commute_time"
+    t.string "overtime"
+    t.integer "available_overtime_hour"
+    t.string "ambulatory"
+    t.integer "available_ambulatory_count"
+    t.string "dialysis"
+    t.integer "available_dialysis_count"
+    t.string "special_equipment"
+    t.string "skill"
+    t.text "personal_summary"
+    t.string "require_first_occupation"
+    t.string "require_second_occupation"
+    t.text "require_location"
+    t.string "require_employment_type"
+    t.integer "require_low_income"
+    t.integer "require_high_income"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
