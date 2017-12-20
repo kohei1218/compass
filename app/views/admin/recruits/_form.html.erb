@@ -14,67 +14,67 @@
 
   <div class="box-body">
     <div class="form-group">
-      <%= f.label "募集職種" %>
+      <%= f.label '募集要項' %>
       <%= f.text_area :occupation, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "募集詳細" %>
+      <%= f.label '募集詳細' %>
       <%= f.text_area :description, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "仕事内容サマリー" %>
+      <%= f.label '仕事内容サマリー' %>
       <%= f.text_area :job_summary, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "仕事内容詳細" %>
+      <%= f.label '仕事内容詳細' %>
       <%= f.text_area :job_description, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "対象となる方" %>
+      <%= f.label '対象となる方' %>
       <%= f.text_area :qualification, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "雇用形態" %>
+      <%= f.label '雇用形態' %>
       <%= f.text_area :employment_type, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "給与・待遇" %>
+      <%= f.label '給与・待遇' %>
       <%= f.text_area :salary, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "福利厚生" %>
+      <%= f.label '福利厚生' %>
       <%= f.text_area :welfare, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "勤務時間" %>
+      <%= f.label '勤務時間' %>
       <%= f.text_area :office_hours, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "休日・休暇" %>
+      <%= f.label '休日・休暇' %>
       <%= f.text_area :holiday, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "勤務地" %>
+      <%= f.label '勤務地' %>
       <%= f.text_area :location, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "障がいへの配慮" %>
+      <%= f.label '障がいへの配慮' %>
       <%= f.text_area :consideration, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "その他" %>
+      <%= f.label 'その他' %>
       <%= f.text_area :information, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "選考プロセス" %>
+      <%= f.label '選考プロセス' %>
       <%= f.text_area :screening_process, class: 'form-control' %>
     </div>
     <div class="form-group">
-      <%= f.label "会社" %>
+      <%= f.label '会社' %>
       <%= f.select :company_id, @company.collect {|company| [company.name, company.id]} %>
     </div>
     <div class="form_group">
-      <%= f.label "画像アップロード" %>
+      <%= f.label '画像アップロード' %>
       <%= f.fields_for :recruit_images do |recruit_image| %>
         <% recruit_image.file_field :file_name %>
       <% end %>
