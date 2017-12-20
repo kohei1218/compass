@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<h1>プロフィール変更</h1>
+
+<%= form_for(@user, url: profile_path) do |f| %>
+
+    <div class="field">
+      <%= f.label "姓" %><br/>
+      <%= f.text_area :first_name, autocomplete: "off" %>
+    </div>
+
+    <div class="text_area">
+      <%= f.label "名" %><br/>
+      <%= f.text_area :last_name, autocomplete: "off" %>
+    </div>
+
+    <div class="text_area">
+      <%= f.label "姓（カナ）" %><br/>
+      <%= f.text_area :first_name_kana, autocomplete: "off" %>
+    </div>
+
+    <div class="text_area">
+      <%= f.label "名（カナ）" %><br/>
+      <%= f.text_area :last_name_kana, autocomplete: "off" %>
+    </div>
+
+    <div class="select">
+      <%= f.label "性別" %><br/>
+      <%= f.select :sex, [["男性", 1], ["女性", 2]] %>
+    </div>
+
+    <div class="date_select"><br/>
+      <%= f.label "生年月日" %>
+      <%= f.date_select(
+              :birthday,
+              start_year: 1930,
+              end_year: (Time.now.year - 18),
+              default: Date.new(1989, 1, 1)) %>
+    </div>
+
+    <div class="number_field">
+      <%= f.label "固定電話番号" %><br/>
+      <%= f.number_field :phone_number, autocomplete: "off" %>
+    </div>
+
+    <div class="number_field">
+      <%= f.label "携帯電話番号" %><br/>
+      <%= f.number_field :cell_phone_number, autocomplete: "off" %>
+    </div>
+
+    <div>
+      <%=	f.label "現在の状況" %><br/>
+      <label><%= f.radio_button :employed_status, 1 %>現職中</label>
+      <label><%= f.radio_button :employed_status, 2 %>離職中</label>
+      <label><%= f.radio_button :employed_status, 3 %>在学中</label>
+    </div>
+
+    <div class="select">
+      <%= f.label '障害について' %><br/>
+      <%= f.label '部位' %><br/>
+      <%= f.select :first_handicapped_part, Constants::HANDICAPEDIES %>
+      <%=	f.select :first_handicapped_level, Constants::HANDICAPED_LEVELS %>
+    </div>
+
+    <div class="select">
+      <%= f.label '障害について2' %><br/>
+      <%= f.label '部位' %><br/>
+      <%= f.select :second_handicapped_part, Constants::HANDICAPEDIES, include_blank: "未選択" %>
+      <%=	f.select :second_handicapped_level, Constants::HANDICAPED_LEVELS, include_blank: "未選択" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit '更新' %>
+    </div>
+<% end %>
