@@ -21,5 +21,26 @@
   <p>障がい等級1 : <%= current_user.first_handicapped_level %></p>
   <p>障がい部位2 : <%= current_user.second_handicapped_part %></p>
   <p>障がい等級2 : <%= current_user.second_handicapped_level %></p>
+  <p>都道府県 : <%= current_user.prefecture %></p>
+  <p>住所 : <%= current_user.address %></p>
+  <p>最寄駅 : <%= current_user.station %></p>
+  <p>最終学歴 : <%= current_user.final_education %></p>
+  <p>学校名 : <%= current_user.school_name %></p>
+  <p>卒業年月 : <%= current_user.graduate_date %></p>
+  <p>車椅子就業 : <%= current_user.wheelchair %></p>
+  <p>自動車通勤 : <%= current_user.car_commute %></p>
+  <p>電話対応の可否 : <%= current_user.phone_support %></p>
+  <p>通勤時間配慮 : <%= current_user.commute_time %></p>
+  <p>残業の可否 : <%= current_user.overtime %>  <%= current_user.available_overtime_hour %>時間まで/1日 </p>
+  <p>通院 : <%= current_user.ambulatory %>  月<%= current_user.available_ambulatory_count %>回 </p>
+  <p>人工透析 : <%= current_user.dialysis %> 週<%= current_user.available_dialysis_count %>回</p>
+  <p>特殊機器 : <%= current_user.special_equipment %></p>
+  <p>資格 : <%= current_user.skill %></p>
+  <p>職務経歴 : <%= current_user.personal_summary %></p>
+  <p>希望職種１ : <%= current_user.require_first_occupation %></p>
+  <p>希望職種２ : <%= current_user.require_second_occupation %></p>
+  <p>希望勤務地 : <%= current_user.require_location %></p>
+  <p>希望年収 : <%= current_user.require_low_income %> ~ <%= current_user.require_high_income %></p>
+  <p>希望雇用形態 : <%= current_user.require_employment_type %></p>
 
 </div>
