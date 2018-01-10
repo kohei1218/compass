@@ -24,7 +24,10 @@ Rails.application.routes.draw do
   resource :profile, only: [:show, :edit, :update] do
     collection do
       get :show_resume
-      get :edit_resume
+      get :edit_profile_resume
+      get :edit_handicapped_resume
+      get :edit_skill_resume
+      get :edit_require_resume
       patch :update_resume
     end
   end
