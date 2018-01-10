@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>WEB履歴書障がい情報編集</h1>
+
+<%= form_for(@user, url: profile_path) do |f| %>
+
+    <div class="select">
+      <%= f.label '障害について' %><br/>
+      <%= f.label '部位' %><br/>
+      <%= f.select :first_handicapped_part, Constants::HANDICAPEDIES %>
+      <%=	f.select :first_handicapped_level, Constants::HANDICAPED_LEVELS %>
+    </div>
+
+    <div class="select">
+      <%= f.label '障害について2' %><br/>
+      <%= f.label '部位' %><br/>
+      <%= f.select :second_handicapped_part, Constants::HANDICAPEDIES, include_blank: '未選択' %>
+      <%=	f.select :second_handicapped_level, Constants::HANDICAPED_LEVELS, include_blank: '未選択' %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit '更新' %>
+    </div>
+<% end %>

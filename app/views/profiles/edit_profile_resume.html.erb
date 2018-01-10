@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>WEB履歴書編集</h1>
+<h1>WEB履歴書プロフィール編集</h1>
 
 <%= form_for(@user, url: profile_path) do |f| %>
 
@@ -53,20 +53,6 @@
       <label><%= f.radio_button :employed_status, 1 %>現職中</label>
       <label><%= f.radio_button :employed_status, 2 %>離職中</label>
       <label><%= f.radio_button :employed_status, 3 %>在学中</label>
-    </div>
-
-    <div class="select">
-      <%= f.label '障害について' %><br/>
-      <%= f.label '部位' %><br/>
-      <%= f.select :first_handicapped_part, Constants::HANDICAPEDIES %>
-      <%=	f.select :first_handicapped_level, Constants::HANDICAPED_LEVELS %>
-    </div>
-
-    <div class="select">
-      <%= f.label '障害について2' %><br/>
-      <%= f.label '部位' %><br/>
-      <%= f.select :second_handicapped_part, Constants::HANDICAPEDIES, include_blank: '未選択' %>
-      <%=	f.select :second_handicapped_level, Constants::HANDICAPED_LEVELS, include_blank: '未選択' %>
     </div>
 
     <div class="select">

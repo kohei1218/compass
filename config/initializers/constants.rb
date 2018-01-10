@@ -87,4 +87,16 @@ module Constants
       '大学院中退'
   ]
 
+  SELECT_REQUIRES = [
+      '不要',
+      '必要',
+      'あれば尚可'
+  ]
+
+  SELECT_SUPPORTS = [
+      '対応不可',
+      '対応可能',
+      '一部対応可能'
+  ]
+
 end
