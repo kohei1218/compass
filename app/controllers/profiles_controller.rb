@@ -15,6 +15,15 @@ class ProfilesController < ApplicationController
     end
   end
 
+  def show_resume
+  end
+
+  def edit_resume
+  end
+
+  def update_resume
+  end
+
   def profile_params
     params.require(:user).permit(
         :first_name,

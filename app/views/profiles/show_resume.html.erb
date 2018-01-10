@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>WEB履歴書</h1>
+
+<div>
+  <h2>プロフィール</h2>
+  <p>メールアドレス: <%= current_user.email %></p>
+  <p>名前（カナ）: <%= current_user.first_name_kana %> <%= current_user.last_name_kana %></p>
+  <p>名前（漢字 : <%= current_user.first_name %> <%= current_user.last_name %></p>
+  <p>性別 :
+    <% if current_user.sex == 1 %>
+        男性
+    <% else%>
+        女性
+    <% end %>
+  </p>
+  <p>誕生日 : <% current_user.created_at.to_s %></p>
+  <p>固定電話番号 : <%= current_user.phone_number %></p>
+  <p>携帯電話番号: <%= current_user.cell_phone_number %></p>
+  <p>障がい部位1 : <%= current_user.first_handicapped_part %></p>
+  <p>障がい等級1 : <%= current_user.first_handicapped_level %></p>
+  <p>障がい部位2 : <%= current_user.second_handicapped_part %></p>
+  <p>障がい等級2 : <%= current_user.second_handicapped_level %></p>
+
+</div>

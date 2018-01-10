@@ -21,7 +21,13 @@ Rails.application.routes.draw do
   resources :recruits, only: [:index, :show] do
     resource :favorites, only: [:create, :destroy]
   end
-  resource :profile, only: [:show, :edit, :update]
+  resource :profile, only: [:show, :edit, :update] do
+    collection do
+      get :show_resume
+      get :edit_resume
+      patch :update_resume
+    end
+  end
   resources :favorites, only: [:index, :show]
   resources :voices, only: [:index]
   resources :questions, only: [:index]
