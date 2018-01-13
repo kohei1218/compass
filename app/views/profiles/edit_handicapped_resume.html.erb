@@ -18,6 +18,53 @@
       <%=	f.select :second_handicapped_level, Constants::HANDICAPED_LEVELS, include_blank: '未選択' %>
     </div>
 
+    <div class="select">
+      <%= f.label '車椅子就業' %><br/>
+      <%=	f.select :wheelchair, Constants::SELECT_REQUIRES %>
+    </div>
+
+    <div class="select">
+      <%= f.label '自動車通勤' %><br/>
+      <%=	f.select :car_commute, Constants::SELECT_REQUIRES %>
+    </div>
+
+    <div class="select">
+      <%= f.label '電話対応の可否' %><br/>
+      <%=	f.select :phone_support, Constants::SELECT_SUPPORTS %>
+    </div>
+
+    <div class="select">
+      <%= f.label '通勤時間配慮' %><br/>
+      <%=	f.select :commute_time, Constants::SELECT_REQUIRES %>
+    </div>
+
+    <div class="select">
+      <%= f.label '残業の可否' %><br/>
+      <%=	f.select :overtime, Constants::SELECT_SUPPORTS %><br>
+      <%= f.label '1日何時間まで対応可能か' %><br/>
+      <%=	f.text_area :available_overtime_hour, autocomplete: "off" %>
+    </div>
+
+    <div class="select">
+      <%= f.label '通院' %><br/>
+      <%=	f.select :ambulatory, [['なし', 'なし'], ['あり', 'あり']] %><br>
+      <%= f.label '月何回か' %><br/>
+      <%=	f.text_area :available_ambulatory_count, autocomplete: "off" %>
+    </div>
+
+    <div class="select">
+      <%= f.label '人工透析' %><br/>
+      <%=	f.select :dialysis, [['なし', 'なし'], ['あり', 'あり']] %><br>
+      <%= f.label '週何回か' %><br/>
+      <%=	f.text_area :available_dialysis_count, autocomplete: "off" %>
+    </div>
+
+    <div class="select">
+      <%= f.label '特殊機器' %><br/>
+      <%=	f.text_area :special_equipment, autocomplete: "off" %>
+    </div>
+
+
     <div class="actions">
       <%= f.submit '更新' %>
     </div>

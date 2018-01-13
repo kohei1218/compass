@@ -5,7 +5,7 @@
 <% if user_signed_in? %>
   <div>
     <h2><%= current_user.last_name %> <%= current_user.first_name %>さんのプロフィール</h2>
-    <%= image_tag 'profile', :size => '250x200', :class => "recruit_image" %>
+    <!--<%= image_tag 'profile', :size => '250x200', :class => "recruit_image" %>-->
     <div class="recruit_content">
       <p>メールアドレス: <%= current_user.email %></p>
       <p>名前（カナ）: <%= current_user.first_name_kana %> <%= current_user.last_name_kana %></p>

@@ -11,7 +11,7 @@ class ProfilesController < ApplicationController
     if @user.update(profile_params)
       redirect_to profile_path, notice: 'ユーザー情報を更新しました'
     else
-      render :edit
+      render :edit, notice: '失敗'
     end
   end
 

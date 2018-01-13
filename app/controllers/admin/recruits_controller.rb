@@ -1,5 +1,6 @@
 class Admin::RecruitsController < ApplicationController
   before_action :set_recruit, only: [:show, :edit, :update, :destroy]
+  before_action :set_company, onlu: [:show, :new, :edit, :create]
   before_action :authenticate_admin!
   layout 'admin'
 
@@ -13,17 +14,14 @@ class Admin::RecruitsController < ApplicationController
   def new
     @recruit = Recruit.new
     @recruit.recruit_images.build
-    @company = Company.all
   end
 
   def edit
-    @company = Company.all
   end
 
   def create
     @recruit = Recruit.new(recruit_params)
     @recruit.recruit_images.build
-    @company = Company.all
     if @recruit.save
       redirect_to admin_recruits_path, notice: '求人が作成されました。'
     else
@@ -71,6 +69,10 @@ class Admin::RecruitsController < ApplicationController
         :company_id,
         recruit_images_attributes: [:file_name]
     )
+  end
+
+  def set_company
+    @company = Company.all
   end
 
 end
