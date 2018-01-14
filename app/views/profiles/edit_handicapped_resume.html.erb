@@ -2,7 +2,7 @@
 
 <h1>WEB履歴書障がい情報編集</h1>
 
-<%= form_for(@user, url: profile_path) do |f| %>
+<%= form_for(@user, url: update_handicapped_resume_profile_path) do |f| %>
 
     <div class="select">
       <%= f.label '障害について' %><br/>
@@ -20,41 +20,41 @@
 
     <div class="select">
       <%= f.label '車椅子就業' %><br/>
-      <%=	f.select :wheelchair, Constants::SELECT_REQUIRES %>
+      <%=	f.select :wheelchair, Constants::SELECT_REQUIRES, include_blank: '未選択' %>
     </div>
 
     <div class="select">
       <%= f.label '自動車通勤' %><br/>
-      <%=	f.select :car_commute, Constants::SELECT_REQUIRES %>
+      <%=	f.select :car_commute, Constants::SELECT_REQUIRES, include_blank: '未選択' %>
     </div>
 
     <div class="select">
       <%= f.label '電話対応の可否' %><br/>
-      <%=	f.select :phone_support, Constants::SELECT_SUPPORTS %>
+      <%=	f.select :phone_support, Constants::SELECT_SUPPORTS, include_blank: '未選択' %>
     </div>
 
     <div class="select">
       <%= f.label '通勤時間配慮' %><br/>
-      <%=	f.select :commute_time, Constants::SELECT_REQUIRES %>
+      <%=	f.select :commute_time, Constants::SELECT_REQUIRES, include_blank: '未選択' %>
     </div>
 
     <div class="select">
       <%= f.label '残業の可否' %><br/>
-      <%=	f.select :overtime, Constants::SELECT_SUPPORTS %><br>
+      <%=	f.select :overtime, Constants::SELECT_SUPPORTS, include_blank: '未選択' %><br>
       <%= f.label '1日何時間まで対応可能か' %><br/>
       <%=	f.text_area :available_overtime_hour, autocomplete: "off" %>
     </div>
 
     <div class="select">
       <%= f.label '通院' %><br/>
-      <%=	f.select :ambulatory, [['なし', 'なし'], ['あり', 'あり']] %><br>
+      <%=	f.select :ambulatory, [['なし', 'なし'], ['あり', 'あり']], include_blank: '未選択' %><br>
       <%= f.label '月何回か' %><br/>
       <%=	f.text_area :available_ambulatory_count, autocomplete: "off" %>
     </div>
 
     <div class="select">
       <%= f.label '人工透析' %><br/>
-      <%=	f.select :dialysis, [['なし', 'なし'], ['あり', 'あり']] %><br>
+      <%=	f.select :dialysis, [['なし', 'なし'], ['あり', 'あり']], include_blank: '未選択' %><br>
       <%= f.label '週何回か' %><br/>
       <%=	f.text_area :available_dialysis_count, autocomplete: "off" %>
     </div>

@@ -2,7 +2,7 @@
 
 <h1>WEB履歴書プロフィール編集</h1>
 
-<%= form_for(@user, url: profile_path) do |f| %>
+<%= form_for(@user, url: update_profile_resume_profile_path) do |f| %>
 
     <div class="field">
       <%= f.label '姓' %><br/>
@@ -57,7 +57,7 @@
 
     <div class="select">
       <%= f.label '都道府県' %><br/>
-      <%= f.select :prefecture, Constants::SEARCH_AREAS %>
+      <%= f.select :prefecture, Constants::SEARCH_AREAS, include_blank: '未選択' %>
     </div>
 
     <div class="text_area">
@@ -72,7 +72,7 @@
 
     <div class="field">
       <%= f.label '最終学歴' %><br/>
-      <%= f.select :final_education, Constants::EDUCATION_TYPES %>
+      <%= f.select :final_education, Constants::EDUCATION_TYPES, include_blank: '未選択' %>
     </div>
 
     <div class="field">

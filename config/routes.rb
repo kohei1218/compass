@@ -28,7 +28,10 @@ Rails.application.routes.draw do
       get :edit_handicapped_resume
       get :edit_skill_resume
       get :edit_require_resume
-      patch :update_resume
+      patch :update_profile_resume
+      patch :update_handicapped_resume
+      patch :update_skill_resume
+      patch :update_require_resume
     end
   end
   resources :favorites, only: [:index, :show]

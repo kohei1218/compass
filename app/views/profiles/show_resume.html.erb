@@ -42,5 +42,8 @@
   <p>希望勤務地 : <%= current_user.require_location %></p>
   <p>希望年収 : <%= current_user.require_low_income %> ~ <%= current_user.require_high_income %></p>
   <p>希望雇用形態 : <%= current_user.require_employment_type %></p>
-
+  <%= link_to 'プロフィール履歴書編集', edit_profile_resume_profile_path %>
+  <%=	link_to '障がい履歴書編集', edit_handicapped_resume_profile_path %>
+  <%=	link_to 'スキル履歴書編集', edit_skill_resume_profile_path %>
+  <%= link_to '希望履歴書編集', edit_require_resume_profile_path %>
 </div>

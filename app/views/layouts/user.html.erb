@@ -44,7 +44,8 @@
   </div>
 </header>
 
-<% if @user.errors.any? %>
+<% if @user != nil %>
+  <% if @user.errors.any? %>
     <div id="error_explanation" class="alert alert-danger">
       <ul>
         <% @user.errors.full_messages.each do |message| %>
@@ -52,8 +53,8 @@
         <% end %>
       </ul>
     </div>
+  <% end %>
 <% end %>
-
 
 <%= content_for?(:content) ? yield(:content) : yield %>
 </body>

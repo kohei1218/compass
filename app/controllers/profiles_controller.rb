@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :edit_profile_resume, :edit_handicapped_resume, :edit_skill_resume, :edit_require_resume]
+  before_action :set_user
   layout 'user'
   def show
   end
@@ -11,7 +11,7 @@ class ProfilesController < ApplicationController
     if @user.update(profile_params)
       redirect_to profile_path, notice: 'ユーザー情報を更新しました'
     else
-      render :edit, notice: '失敗'
+      render :edit
     end
   end
 
@@ -30,7 +30,36 @@ class ProfilesController < ApplicationController
   def edit_require_resume
   end
 
-  def update_resume
+  def update_profile_resume
+    if @user.update(profile_resume_params)
+      redirect_to show_resume_profile_path, notice: 'プロフィール履歴書を更新しました'
+    else
+      render :edit_profile_resume
+    end
+  end
+
+  def update_handicapped_resume
+    if @user.update(profile_params)
+      redirect_to show_resume_profile_path, notice: '障がい履歴書を更新しました'
+    else
+      render :edit_handicapped_resume
+    end
+  end
+
+  def update_skill_resume
+    if @user.update(profile_params)
+      redirect_to show_resume_profile_path, notice: 'スキル履歴書を更新しました'
+    else
+      render :edit_skill_resume
+    end
+  end
+
+  def update_require_resume
+    if @user.update(profile_params)
+      redirect_to show_resume_profile_path, notice: '希望履歴書を更新しました'
+    else
+      render :edit_require_resume
+    end
   end
 
   def profile_params
@@ -48,6 +77,26 @@ class ProfilesController < ApplicationController
         :first_handicapped_level,
         :second_handicapped_part,
         :second_handicapped_level
+    )
+  end
+
+  def profile_resume_params
+    params.require(:user).permit(
+        :first_name,
+        :last_name,
+        :first_name_kana,
+        :last_name_kana,
+        :sex,
+        :birthday,
+        :phone_number,
+        :cell_phone_number,
+        :employed_status,
+        :prefecture,
+        :address,
+        :station,
+        :final_education,
+        :school_name,
+        :graduate_date
     )
   end
 
