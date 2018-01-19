@@ -2,20 +2,31 @@
 
 <h1>WEB履歴書希望条件編集</h1>
 
-<%= form_for(@user, url: profile_path) do |f| %>
+<%= form_for(@user, url: update_require_resume_profile_path) do |f| %>
 
     <div class="select">
-      <%= f.label '障害について' %><br/>
-      <%= f.label '部位' %><br/>
-      <%= f.select :first_handicapped_part, Constants::HANDICAPEDIES %>
-      <%=	f.select :first_handicapped_level, Constants::HANDICAPED_LEVELS %>
+      <%= f.label '第一希望職種' %><br/>
+      <%= f.select :require_first_occupation, Constants::OCCUPATION_TYPES, include_blank: '未選択' %>
     </div>
 
     <div class="select">
-      <%= f.label '障害について2' %><br/>
-      <%= f.label '部位' %><br/>
-      <%= f.select :second_handicapped_part, Constants::HANDICAPEDIES, include_blank: '未選択' %>
-      <%=	f.select :second_handicapped_level, Constants::HANDICAPED_LEVELS, include_blank: '未選択' %>
+      <%= f.label '第二希望職種' %><br/>
+      <%= f.select :require_second_occupation, Constants::OCCUPATION_TYPES, include_blank: '未選択' %>
+    </div>
+
+    <div class="select">
+      <%= f.label '希望勤務地' %><br/>
+      <%= f.select :require_location, Constants::SEARCH_AREAS, include_blank: '未選択' %>
+    </div>
+
+    <div class="select">
+      <%= f.label '希望雇用形態' %><br/>
+      <%= f.select :require_employment_type, Constants::EMPLOYMENT_TYPES, include_blank: '未選択' %>
+    </div>
+
+    <div class="field">
+      <%= f.label '希望年収' %><br/>
+      <%=	f.text_area :require_low_income, autocomplete: "off" %> ~ <%=	f.text_area :require_high_income, autocomplete: "off" %>
     </div>
 
     <div class="actions">

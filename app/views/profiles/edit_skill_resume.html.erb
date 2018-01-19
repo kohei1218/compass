@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<h1>WEB履歴書スキル編集</h1>
+
+<%= form_for(@user, url: update_skill_resume_profile_path) do |f| %>
+
+    <div class="field">
+      <%= f.label '資格' %><br/>
+      <%=	f.text_area :skill, autocomplete: "off" %>
+    </div>
+
+    <div class="field">
+      <%= f.label '経歴' %><br/>
+      <%=	f.text_area :personal_summary, autocomplete: "off" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit '更新' %>
+    </div>
+<% end %>

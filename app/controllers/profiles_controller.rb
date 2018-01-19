@@ -1,6 +1,7 @@
 class ProfilesController < ApplicationController
   before_action :set_user
   layout 'user'
+
   def show
   end
 
@@ -39,7 +40,7 @@ class ProfilesController < ApplicationController
   end
 
   def update_handicapped_resume
-    if @user.update(profile_params)
+    if @user.update(handicapped_resume_params)
       redirect_to show_resume_profile_path, notice: '障がい履歴書を更新しました'
     else
       render :edit_handicapped_resume
@@ -47,7 +48,7 @@ class ProfilesController < ApplicationController
   end
 
   def update_skill_resume
-    if @user.update(profile_params)
+    if @user.update(skill_resume_params)
       redirect_to show_resume_profile_path, notice: 'スキル履歴書を更新しました'
     else
       render :edit_skill_resume
@@ -55,7 +56,7 @@ class ProfilesController < ApplicationController
   end
 
   def update_require_resume
-    if @user.update(profile_params)
+    if @user.update(require_resume_params)
       redirect_to show_resume_profile_path, notice: '希望履歴書を更新しました'
     else
       render :edit_require_resume
@@ -97,6 +98,42 @@ class ProfilesController < ApplicationController
         :final_education,
         :school_name,
         :graduate_date
+    )
+  end
+
+  def handicapped_resume_params
+    params.require(:user).permit(
+        :first_handicapped_part,
+        :first_handicapped_level,
+        :second_handicapped_part,
+        :second_handicapped_level,
+        :wheelchair,
+        :car_commute,
+        :phone_support,
+        :commute_time,
+        :overtime,
+        :available_overtime_hour,
+        :available_ambulatory_count,
+        :available_dialysis_count,
+        :special_equipment
+    )
+  end
+
+  def skill_resume_params
+    params.require(:user).permit(
+        :skill,
+        :personal_summary
+    )
+  end
+
+  def require_resume_params
+    params.require(:user).permit(
+        :require_first_occupation,
+        :require_second_occupation,
+        :require_location,
+        :require_employment_type,
+        :require_low_income,
+        :require_high_income
     )
   end
 
