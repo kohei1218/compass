@@ -1,0 +1,43 @@
+<h2>メールアドレス・パスワード変更</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label 'メールアドレス' %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label 'パスワード' %> <i>(変更したくない場合は空白のままにしてください)</i><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+    <% if @minimum_password_length %>
+      <br />
+      <em><%= @minimum_password_length %> characters minimum</em>
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'パスワード（確認用）' %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label '現在のパスワード' %> <i>(確認のため現在のパスワードを入力してください)</i><br />
+    <%= f.password_field :current_password, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit '更新' %>
+  </div>
+<% end %>
+
+<h3>退会する</h3>
+
+<p>退会 <%= button_to '退会する', registration_path(resource_name), data: { confirm: '本当に退会しますか？' }, method: :delete %></p>
+
+<%= link_to '戻る', :back %>

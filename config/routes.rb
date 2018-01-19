@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :admin, controllers: {
       sessions:      'admin/sessions',
       passwords:     'admin/passwords',
+      registrations: 'admin/registrations'
   }
 
   devise_for :users, controllers: {
@@ -41,6 +42,7 @@ Rails.application.routes.draw do
 
   # Admin Routes
   namespace :admin do
+    root controller: :dashboard, action: :index
     resources :dashboard, only: [:index]
     resources :recruits
     resources :companies

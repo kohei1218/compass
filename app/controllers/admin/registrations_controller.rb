@@ -1,5 +1,4 @@
-class Users::RegistrationsController < Devise::RegistrationsController
-  layout 'user'
+class Admin::RegistrationsController < Devise::RegistrationsController
   before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
@@ -43,19 +42,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # If you have extra params to permit, append them to the sanitizer.
   def configure_sign_up_params
     devise_parameter_sanitizer.permit(
-        :sign_up, keys: [:first_name,
-               :last_name,
-               :first_name_kana,
-               :last_name_kana,
-               :sex,
-               :birthday,
-               :phone_number,
-               :cell_phone_number,
-               :employed_status,
-               :first_handicapped_part,
-               :first_handicapped_level,
-               :second_handicapped_part,
-               :second_handicapped_level]
+        :sign_up, keys: []
     )
   end
 
@@ -68,7 +55,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # The path used after sign up.
   def after_sign_up_path_for(resource)
-    root_path
+    admin_dashboard_index_path
   end
 
   # The path used after sign up for inactive accounts.
